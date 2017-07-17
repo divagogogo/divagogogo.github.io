@@ -1,6 +1,7 @@
 <style type="text/css">
   .photoIndex > h2 {
     text-transform: uppercase;
+    cursor: pointer;
   }
   .description > p {
     margin: 0;
@@ -28,7 +29,8 @@
     font-weight: 100;
   }
   .description-name {
-    font-size: 1.6rem;
+    font-size: 1.7rem !important;
+    margin-bottom: 6px !important;
   }
   .photoIndex > img,
   .photoIndex > .video-wrap {
