@@ -1,60 +1,127 @@
+<style type="text/css">
+@font-face {
+  font-family: DINBold;
+  src: url('./assets/font/DINBold.woff');
+}
+html {
+  font-size: 62.5%;
+}
+html,body {
+  font-family: DINBold, Futura, MeiHei, Helvetica, Arial, sans-serif;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  /*overflow: hidden;*/
+}
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+.wrap {
+  will-change: transform;
+  transform: translateZ(0);
+  padding-top: 8vh;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+div,a,img {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select:none;
+}
+.wrap {
+  will-change: transform;
+  transform: translateZ(0);
+  padding-top: 8vh;
+}
+.hide {
+  animation: dropdown 1.8s;
+  transform: translateY(-92vh);
+}
+.show {
+  animation: rollback 1.8s;
+  transform: translateY(0);
+}
+
+@keyframes dropdown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-92vh);
+  }
+}
+@keyframes rollback{
+  0% {
+    transform: translateY(-92vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+</style>
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <navbar :hide="hide"></navbar>
+    <div class="wrap" :class="{'hide':hide, 'show': !hide}">
+      <album :routenochange="routenochange" :hide="hide"></album>
+      <router-view :hide="hide" :key="$route.path"></router-view>
+    </div>
   </div>
 </template>
 
 <script>
+import navbar from './components/navbar.vue';
+import album from './components/album.vue';
+
 export default {
   name: 'app',
-  data () {
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      hide : true,
+      routenochange: true
     }
-  }
+  },
+  watch: {
+    // '$route'(to, from) {
+    //   console.log(from.name, to.name, this.routenochange);
+    //   if (to.name !== from.name) {
+    //     this.routenochange = false;
+    //     setTimeout(() => {
+    //         this.routenochange = true;
+    //         console.log('fuck' ,from.name, to.name, this.routenochange);
+
+    //     }, 1000);
+    //     console.log('fuck2' ,from.name, to.name, this.routenochange);
+    //   }
+    // }
+  },
+  created() {
+    BUS.$on('showAlbum',() => {
+      this.hide = !this.hide;
+    });
+    BUS.$on('routeChange', (data) => {
+      this.routenochange = data;
+    })
+  },
+  components: {
+    navbar,
+    album
+  },
+
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>

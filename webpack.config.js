@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: './src/main.js',
@@ -25,7 +26,15 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+        // use: ExtractTextPlugin.extract({
+        //   use: "css-loader",
+        //   fallback: "style-loader"
+        // })
+      },
+      {
+        test: /\.(png|jpg|gif|svg|woff|eot)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'
