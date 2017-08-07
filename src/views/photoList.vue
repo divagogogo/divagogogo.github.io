@@ -10,6 +10,7 @@
 }
 .title h2 {
   font-size: 2rem;
+  margin-bottom: 3rem;
   text-transform: uppercase;
 }
 .photo-boxes {
