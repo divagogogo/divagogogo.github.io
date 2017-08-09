@@ -235,7 +235,7 @@ export default {
     ],
     right: [
       {
-        name: 'PRA',
+        name: 'PMA',
         length: 7,
         description: {
           name: 'Estpak Shenzhen KOL Gathering: Fun created by Food',
