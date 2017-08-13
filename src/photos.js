@@ -48,8 +48,8 @@ export default {
         length: 11,
       },
       {
-        name: 'MA-Z',
-        length: 9,
+        name: 'MA-X',
+        length: 10,
       },
       {
         name: 'MA',
@@ -64,8 +64,8 @@ export default {
         length: 9,
       },
       {
-        name: 'MD',
-        length: 10,
+        name: 'MA-Z',
+        length: 9,
       },
       {
         name: 'ME',
@@ -98,8 +98,8 @@ export default {
         length: 8,
       },
       {
-        name: 'RB',
-        length: 9,
+        name: 'RBZ',
+        length: 11,
       },
       {
         name: 'RC',
@@ -114,8 +114,8 @@ export default {
         length: 4,
       },
       {
-        name: 'RF',
-        length: 11,
+        name: 'RB',
+        length: 9,
       },
       {
         name: 'RG',
