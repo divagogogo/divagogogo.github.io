@@ -2,6 +2,14 @@ export default {
   photo: {
     left: [
       {
+        name: 'LA-W',
+        length: 9,
+      },
+      {
+        name: 'LA-X',
+        length: 9,
+      },
+      {
         name: 'LA-Y',
         length: 9,
       },
@@ -44,6 +52,14 @@ export default {
     ],
     center: [
       {
+        name: 'MA-V',
+        length: 9,
+      },
+      {
+        name: 'MA-W',
+        length: 6,
+      },
+      {
         name: 'MA-Y',
         length: 11,
       },
@@ -52,7 +68,7 @@ export default {
         length: 10,
       },
       {
-        name: 'MA',
+        name: 'MAA',
         length: 9,
       },
       {
@@ -89,6 +105,14 @@ export default {
       },
     ],
     right: [
+      {
+        name: 'RA-Y',
+        length: 9,
+      },
+      {
+        name: 'RA-Z',
+        length: 9,
+      },
       {
         name: 'RA',
         length: 9,
@@ -134,12 +158,20 @@ export default {
   art: {
     left: [
       {
-        name: 'ALA',
+        name: 'ALA-X',
+        length: 1,
+      },
+      {
+        name: 'ALA-Y',
+        length: 1,
+      },
+      {
+        name: 'ALA-Z',
         length: 2,
       },
       {
-        name: 'ALB',
-        length: 1,
+        name: 'ALA',
+        length: 2,
       },
       {
         name: 'ALC',
@@ -149,45 +181,45 @@ export default {
         name: 'ALD',
         length: 1,
       },
-      {
-        name: 'ALE',
-        length: 1,
-      },
     ],
     center: [
+      {
+        name: 'AMA-X',
+        length: 1,
+      },
+      {
+        name: 'AMA-Y',
+        length: 1,
+      },
+      {
+        name: 'AMA-Z',
+        length: 3,
+      },
+      {
+        name: 'AMB-Z',
+        length: 1,
+      },
       {
         name: 'AMA',
         length: 7,
       },
       {
-        name: 'AMB',
-        length: 3,
-      },
-      {
         name: 'AMC',
         length: 4,
-      },
-      {
-        name: 'AMD',
-        length: 1,
-      },
-      {
-        name: 'AME',
-        length: 1,
       },
     ],
     right: [
       {
-        name: 'ARA',
+        name: 'ARA-X',
+        length: 1,
+      },
+      {
+        name: 'ARA-Y',
         length: 1,
       },
       {
         name: 'ARB',
         length: 3,
-      },
-      {
-        name: 'ARC',
-        length: 1,
       },
       {
         name: 'ARD',

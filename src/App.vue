@@ -75,7 +75,10 @@ div,a,img {
     <navbar :hide="hide"></navbar>
     <div class="wrap" :class="{'hide':hide, 'show': !hide}">
       <album :routenochange="routenochange" :hide="hide"></album>
-      <router-view :hide="hide" :key="$route.path"></router-view>
+      <keep-alive>
+        <router-view :hide="hide" v-if="$route.meta.keepAlive"></router-view>
+      </keep-alive>
+      <router-view :hide="hide" v-if="!$route.meta.keepAlive"></router-view>
     </div>
   </div>
 </template>
@@ -91,20 +94,6 @@ export default {
       hide : true,
       routenochange: true
     }
-  },
-  watch: {
-    // '$route'(to, from) {
-    //   console.log(from.name, to.name, this.routenochange);
-    //   if (to.name !== from.name) {
-    //     this.routenochange = false;
-    //     setTimeout(() => {
-    //         this.routenochange = true;
-    //         console.log('fuck' ,from.name, to.name, this.routenochange);
-
-    //     }, 1000);
-    //     console.log('fuck2' ,from.name, to.name, this.routenochange);
-    //   }
-    // }
   },
   created() {
     BUS.$on('showAlbum',() => {

@@ -10,7 +10,7 @@
 }
 .title h2 {
   font-size: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.7rem;
   text-transform: uppercase;
 }
 .photo-boxes {
@@ -51,15 +51,15 @@ margin-bottom: 40px;
     font-size: 22px;
   }
   .photo-boxes {
-    padding: 0 16vw;
+    padding: 0 3.7vw;
   }
   .box {
-    width: 21vw;
+    width: 28.4vw;
   }
   .photos {
-    width: 21vw;
+    width: 28.4vw;
     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.10);
-    margin-bottom: 8px;
+    margin-bottom: 2.9vw;
   }
 }
 </style>

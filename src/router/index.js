@@ -12,7 +12,10 @@ export default new Router({
     {
       path: '/',
       name: 'index',
-      component: index
+      component: index,
+      meta: {
+        keepAlive: true
+      }
     }, 
     {
       path: '/photo',

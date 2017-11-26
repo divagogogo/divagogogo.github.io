@@ -19,7 +19,7 @@
     font-weight: lighter;
     font-size: 1rem;
   }
-  @media screen and (min-width:800px) {
+  @media screen and (min-width:600px) {
     .main-bg {
       width: 100%;
       padding-bottom: 66%;
@@ -35,9 +35,12 @@
       font-size: 1.8rem;
 
     }
+    .main-text {
+      transform: translate(-50%, -50%);
+    }
   }
 
-  @media screen and (max-width:800px) {
+  @media screen and (max-width:600px) {
     .main-bg {
       width: 100%;
       padding-bottom: 176%;
@@ -54,13 +57,17 @@
       text-align: center;
       font-size: 1.3rem;
     }
+    .main-text {
+    }
   }
+
   .main-text {
     width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
   }
   .to-center {
     display: block;
@@ -86,10 +93,10 @@
       </div>
       <div class="main-text-wrap" :class="{'to-center': showText}" @click.stop.capture="showAlbum">
         <div class="main-text">
-          <p>Time flies and my roles may change</p>
-          <p>Yet my life time goal will always be the same</p>
-          <p>All I wanna do is to witness, record and feel</p>
-          <p>that every single moment in your life is real</p>
+          <p>TIME FLIES AND MY ROLES MAY CHANGE</p>
+          <p>YET MY LIFE GOAL WILL ALWAYS BE THE SAME</p>
+          <p>ALL I WANNA DO IS TO WITNESS, RECORD AND FEEL</p>
+          <p>THAT EVERY SINGLE MOMENT IN YOUR LIFE IS REAL</p>
         </div>
       </div>
     </div>
