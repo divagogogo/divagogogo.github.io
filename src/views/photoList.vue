@@ -23,10 +23,14 @@
 image[lazy=loading] {
 width: 20vw;
 height: 20vw;
+background-color: #fff;
 margin-bottom: 40px;
 }
 .box a {
   cursor: pointer;
+}
+.no-color {
+  filter: grayscale(100%);
 }
 @media screen and (min-width:600px) {
   .title h2 {
@@ -41,6 +45,16 @@ margin-bottom: 40px;
   }
   .photos {
     width: 18vw;
+    display: block;
+    opacity: 1;
+    transition: opacity 1.2s;
+  }
+  .photos:hover {
+    opacity: 0.5;
+  }
+  .photos-wrap {
+    width: 18vw;
+    background-color: #eee;
     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.10);
     margin-bottom: 20px;
   }
@@ -56,7 +70,12 @@ margin-bottom: 40px;
   .box {
     width: 28.4vw;
   }
+  .box > a {
+    /*height: 0;*/
+    display: block;
+  }
   .photos {
+    display: block;
     width: 28.4vw;
     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.10);
     margin-bottom: 2.9vw;
@@ -71,19 +90,19 @@ margin-bottom: 40px;
     </div>
     <div class="photo-boxes">
       <div class="box">
-        <a v-for="(item, index) in photoData.left" @click="toIndex('left', index)">
+        <div class="photos-wrap" :class="{'no-color': routeName !== 'photo'}" v-for="(item, index) in photoData.left" @click="toIndex('left', index)">
           <img class="photos" v-lazy="'http://ot2ie5s0n.bkt.clouddn.com/' + item.name + '.jpg'">
-        </a>
+        </div>
       </div>
       <div class="box">
-        <a v-for="(item, index) in photoData.center" @click="toIndex('center', index)">
+        <div class="photos-wrap" :class="{'no-color': routeName !== 'photo'}" v-for="(item, index) in photoData.center" @click="toIndex('center', index)">
           <img class="photos" v-lazy="'http://ot2ie5s0n.bkt.clouddn.com/' + item.name + '.jpg'">
-        </a>
+        </div>
       </div>
       <div class="box">
-        <a v-for="(item, index) in photoData.right" @click="toIndex('right', index)">
+        <div class="photos-wrap" :class="{'no-color': routeName !== 'photo'}" v-for="(item, index) in photoData.right" @click="toIndex('right', index)">
           <img class="photos" v-lazy="'http://ot2ie5s0n.bkt.clouddn.com/' + item.name + '.jpg'">
-        </a>
+        </div>
       </div>
     </div>
   </div>

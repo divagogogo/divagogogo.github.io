@@ -65,7 +65,7 @@
     margin: auto;
     box-sizing: border-box;
     width: 35vw;
-    margin-bottom: 0.4vh;
+    /*margin-bottom: 0.4vh;*/
   }
   .album-img-wrap {
     width: 35vw;
