@@ -2,10 +2,8 @@
   .main {
     width: 100%;
     height: 92vh;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
     position: relative;
-    background-color: #000;
+    background-color: #141414;
   }
   .main-text-wrap {
     width: 100%;
@@ -19,13 +17,15 @@
     font-weight: lighter;
     font-size: 1rem;
   }
+  .main-bg {
+    width: 100%;
+    height: 92vh;
+    opacity: 1;
+    transition: all 2s;
+  }
   @media screen and (min-width:600px) {
     .main-bg {
-      width: 100%;
-      padding-bottom: 66%;
-      opacity: 1;
-      transition: all 2s;
-      background: #000 center top/100% auto url('../assets/main-web.jpg') no-repeat;
+      background: #141414 center center/30% auto url('../assets/main.jpg') no-repeat;
     }
     .main-op {
       opacity: 0;
@@ -42,12 +42,7 @@
 
   @media screen and (max-width:600px) {
     .main-bg {
-      width: 100%;
-      padding-bottom: 176%;
-      opacity: 1;
-      transition: all 2.4s;
-      background: #000 top/100% auto url('../assets/main-mobile.jpg') no-repeat;
-
+      background: #141414 center center/60% auto url('../assets/main.jpg') no-repeat;
     }
     .main-op {
       opacity: 0;

@@ -1,10 +1,36 @@
 <style type="text/css">
-  .photoIndex > h2 {
+  .photoIndex > div {
     text-transform: uppercase;
-    cursor: pointer;
   }
   .description > p {
     margin: 0;
+  }
+  .photoIndexH2 {
+    position: relative;
+  }
+  .photoIndexH2 > b {
+    cursor: pointer;
+  }
+  .photoIndexH2 > span {
+    height: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    height: 100%;
+    top: 30%;
+    font-size: 12px;  
+    z-index: 100;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+  .grey {
+    color: grey;
   }
 @media screen and (min-width:600px) {
   .photoIndex {
@@ -16,7 +42,7 @@
     padding: 40px 22%;
     box-sizing: border-box;
   }
-  .photoIndex > h2 {
+  .photoIndex > div {
     font-size: 2rem;
     margin-bottom: 3rem;
   }
@@ -25,8 +51,8 @@
     margin-bottom: 30px;
   }
   .description > p {
+    line-height: 1.4rem;
     font-size: 1.4rem;
-    font-weight: 100;
   }
   .description-name {
     font-size: 1.7rem !important;
@@ -47,6 +73,12 @@
     text-align: center;
     padding: 20px 10%;
     box-sizing: border-box;
+  }
+  .photoIndexH2 {
+    margin-bottom: 1.4rem;
+  }
+  .photoIndexH2 > span {
+    font-size: 0.6rem;
   }
   .description {
     text-align: left;
@@ -81,10 +113,17 @@
 .video-player > div {
   padding-bottom: 56.25% !important;
 }
+
+
 </style>
 <template>
   <div class="photoIndex">
-  <h2 @click="toList">{{$route.params.name}}</h2>
+  <div class="photoIndexH2">
+    <span class="prev" :class="{ grey: noPrev }" @click="prevPage">prev -</span>
+    <b @click="toList">{{$route.params.name}}</b>
+    <span class="next" :class="{ grey: noNext }" @click="nextPage">+ next</span>
+
+ </div>
     <div class="description" v-if="photoData.hasOwnProperty('description')">
       <p class="description-name">{{photoData.description.name}}:</p>
       <p>{{photoData.description.value}}</p>
@@ -106,6 +145,31 @@ export default {
   components: {
     videoPlayer
   },
+  data() {
+    return {
+      noNext: false,
+      noPrev: false
+    }
+  },
+  created() {
+    const { params } = this.$route;
+    const centerLength = photos[params.name].center.length;
+    const leftLength = photos[params.name].left.length;
+    const rightLength = photos[params.name].right.length;
+
+    if (this.$route.params.n === '0' && this.$route.params.position === 'left') {
+      this.noPrev = true;
+    }
+    if (this.$route.params.position === 'center' && this.$route.params.n > rightLength - 1) {
+      this.noNext = true;
+    }
+    if (this.$route.params.position === 'left' && this.$route.params.n > centerLength - 1) {
+      this.noNext = true;
+    }
+    if (this.$route.params.position === 'right' && this.$route.params.n >= leftLength - 1) {
+      this.noNext = true;
+    }
+  },
   methods: {
     toList() {
       BUS.$emit('showAlbum');
@@ -115,6 +179,102 @@ export default {
         this.$router.push({name: this.$route.params.name});
         BUS.$emit('showAlbum');
       }, 1400);
+    },
+    prevPage() {
+      this.noNext = false;
+      const { name, params } = this.$route;
+      switch (params.position) {
+        case 'left':
+          if (+params.n === 0) {
+            this.noPrev = true;
+            return false;
+          } else {
+            this.$router.push({
+              name,
+              params: {
+                name: params.name,
+                position: 'right',
+                n: params.n - 1
+              }
+            })
+          }
+          break;
+        case 'center': 
+          this.$router.push({
+            name,
+            params: {
+              name: params.name,
+              position: 'left',
+              n: params.n
+            }
+          })
+          break;
+        case 'right':
+          this.$router.push({
+            name,
+            params: {
+              name: params.name,
+              position: 'center',
+              n: params.n
+            }
+          })
+          break;
+
+      }
+    },
+    nextPage() {
+      this.noPrev = false;
+      const { name, params} = this.$route;
+      switch (params.position) {
+        case 'left':
+          const centerLength = photos[params.name].center.length;
+          if (params.n > centerLength - 1) {
+            this.noNext = true;
+            return false;
+          } else {
+            this.$router.push({
+              name,
+              params: {
+                name: params.name,
+                position: 'center',
+                n: +params.n
+              }
+            })
+          }
+          break;
+        case 'center':
+          const rightLength = photos[params.name].right.length;
+          if (params.n > rightLength - 1) {
+            this.noNext = true;
+            return false;            
+          } else {
+            this.$router.push({
+              name,
+              params: {
+                name: params.name,
+                position: 'right',
+                n: +params.n
+              }
+            })            
+          }
+          break;        
+        case 'right':
+          const leftLength = photos[params.name].left.length;
+          if (params.n >= leftLength - 1) {
+            this.noNext = true;
+            return false; 
+          } else {
+            this.$router.push({
+              name,
+              params: {
+                name: params.name,
+                position: 'left',
+                n: +params.n + 1
+              }
+            })    
+          }
+          break;
+      }
     }
   },
   computed: {
