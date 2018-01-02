@@ -2,6 +2,7 @@
   .main {
     width: 100%;
     height: 92vh;
+    overflow: hidden;
     position: relative;
     background-color: #141414;
   }
@@ -19,7 +20,7 @@
   }
   .main-bg {
     width: 100%;
-    height: 92vh;
+    height: 93vh;
     opacity: 1;
     transition: all 2s;
   }

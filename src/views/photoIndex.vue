@@ -126,7 +126,7 @@
  </div>
     <div class="description" v-if="photoData.hasOwnProperty('description')">
       <p class="description-name">{{photoData.description.name}}:</p>
-      <p>{{photoData.description.value}}</p>
+      <p v-html="photoData.description.value"></p>
     </div>
     <div class="video-wrap" v-if="photoData.hasOwnProperty('video')">
         <video-player  ref="videoPlayer" 
