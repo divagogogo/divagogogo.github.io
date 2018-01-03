@@ -1,12 +1,10 @@
 <style type="text/css">
-  .photoIndex > div {
-    text-transform: uppercase;
-  }
   .description > p {
     margin: 0;
   }
   .photoIndexH2 {
     position: relative;
+    text-transform: uppercase;
   }
   .photoIndexH2 > b {
     cursor: pointer;

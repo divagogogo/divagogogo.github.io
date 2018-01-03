@@ -36,9 +36,6 @@
       font-size: 1.8rem;
 
     }
-    .main-text {
-      transform: translate(-50%, -50%);
-    }
   }
 
   @media screen and (max-width:600px) {
@@ -52,18 +49,38 @@
       opacity: 1;
       text-align: center;
       font-size: 1.3rem;
-    }
-    .main-text {
+
     }
   }
 
   .main-text {
+    margin-top: 9vh;
     width: 100%;
+    height: 74vh;
+    position: relative;
+  }
+  .main-text-title {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    text-align: left;
+    left: 3.7vw;
+    top: 0;
+  }
+  .main-text-title > p {
+    font-size: 30px;
+    margin: 0;
+  }
+  .main-text-detail {
+    font-size: 12px;
+    text-align: right;
+    position: absolute;
+    right: 3.7vw;
+    bottom: 6vh;
+    border-bottom: 1px solid #fff;
+  }
+  .main-text-enter {
+    position: absolute;
+    bottom: 0;
+    right: 3.7vw;
   }
   .to-center {
     display: block;
@@ -89,10 +106,19 @@
       </div>
       <div class="main-text-wrap" :class="{'to-center': showText}" @click.stop.capture="showAlbum">
         <div class="main-text">
-          <p>TIME FLIES AND MY ROLES MAY CHANGE</p>
-          <p>YET MY LIFE GOAL WILL ALWAYS BE THE SAME</p>
-          <p>ALL I WANNA DO IS TO WITNESS, RECORD AND FEEL</p>
-          <p>THAT EVERY SINGLE MOMENT IN YOUR LIFE IS REAL</p>
+          <div class="main-text-title">
+            <p>DIVA</p>
+            <p>GAO</p>
+          </div>
+          <div class="main-text-detail">
+            <p>Time Files And My Roles May Change</p>
+            <p>Yet My Lige Goal Will Always Be The </p>
+            <p>All I Wanna Do Is To Witness, Record And Feel</p>
+            <p>That Every Single Moment In Your Life Is Real</p>
+          </div>
+          <div class="main-text-enter">
+            <p>-ENTER</p>
+          </div>
         </div>
       </div>
     </div>
