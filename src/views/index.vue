@@ -70,12 +70,13 @@
     margin: 0;
   }
   .main-text-detail {
-    font-size: 12px;
     text-align: right;
     position: absolute;
     right: 3.7vw;
     bottom: 6vh;
     border-bottom: 1px solid #fff;
+    font-family: DINLight;
+    font-size: 14px;
   }
   .main-text-enter {
     position: absolute;

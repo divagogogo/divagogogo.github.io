@@ -3,6 +3,14 @@
   font-family: DINBold;
   src: url('./assets/font/DINBold.woff');
 }
+@font-face {
+  font-family: DINLight;
+  src: url('./assets/font/DINLight.woff');
+}
+@font-face {
+  font-family: DINMedium;
+  src: url('./assets/font/DINMedium.ttf');
+}
 html {
   font-size: 62.5%;
 }

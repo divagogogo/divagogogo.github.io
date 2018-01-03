@@ -21,6 +21,11 @@
     font-size: 12px;  
     z-index: 100;
   }
+  .description-value {
+    font-family: DINMedium;
+    font-size: 14px;
+    line-height: 16px;
+  }
   .prev {
     left: 0;
   }
@@ -124,7 +129,7 @@
  </div>
     <div class="description" v-if="photoData.hasOwnProperty('description')">
       <p class="description-name">{{photoData.description.name}}:</p>
-      <p v-html="photoData.description.value"></p>
+      <p class="description-value" v-html="photoData.description.value"></p>
     </div>
     <div class="video-wrap" v-if="photoData.hasOwnProperty('video')">
         <video-player  ref="videoPlayer" 
