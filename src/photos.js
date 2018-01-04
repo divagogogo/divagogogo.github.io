@@ -171,10 +171,6 @@ export default {
         name: "MH",
         length: 8,
       },
-      {
-        name: "MI",
-        length: 4,
-      },
     ],
     right: [
       {
@@ -240,6 +236,10 @@ export default {
         name: "RH",
         length: 2,
       },
+      {
+        name: "MI",
+        length: 4,
+      },
     ],
   },
   art: {
@@ -249,7 +249,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 空門",
-          value: "MODEL: KUI</br>SHOOTING IN MACAO",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. It maybe a drawing, or maybe an effect made by photoshop, without color. ",
         },
       },
       {

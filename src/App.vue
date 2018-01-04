@@ -1,11 +1,13 @@
 <style type="text/css">
 @font-face {
   font-family: DINBold;
-  src: url('./assets/font/DINBold.woff');
+  src: url('./assets/font/DINBold.woff') format('woff'),
+       url('./assets/font/DINBold.ttf')  format('truetype')
 }
 @font-face {
   font-family: DINLight;
-  src: url('./assets/font/DINLight.woff');
+  src: url('./assets/font/DINLight.woff') format('woff'),
+       url('./assets/font/DINLight.ttf')  format('truetype')
 }
 @font-face {
   font-family: DINMedium;

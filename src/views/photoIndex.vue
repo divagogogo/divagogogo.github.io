@@ -24,7 +24,7 @@
   .description-value {
     font-family: DINMedium;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 20px;
   }
   .prev {
     left: 0;

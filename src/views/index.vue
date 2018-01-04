@@ -66,7 +66,7 @@
     top: 0;
   }
   .main-text-title > p {
-    font-size: 30px;
+    font-size: 38px;
     margin: 0;
   }
   .main-text-detail {
@@ -77,6 +77,7 @@
     border-bottom: 1px solid #fff;
     font-family: DINLight;
     font-size: 14px;
+    line-height: 16px;
   }
   .main-text-enter {
     position: absolute;
