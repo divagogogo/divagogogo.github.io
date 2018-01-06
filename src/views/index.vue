@@ -54,7 +54,7 @@
   }
 
   .main-text {
-    margin-top: 9vh;
+    margin: 9vh 0;
     width: 100%;
     height: 74vh;
     position: relative;
@@ -66,7 +66,7 @@
     top: 0;
   }
   .main-text-title > p {
-    font-size: 38px;
+    font-size: 42px;
     margin: 0;
   }
   .main-text-detail {
@@ -76,8 +76,8 @@
     bottom: 6vh;
     border-bottom: 1px solid #fff;
     font-family: DINLight;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 12px;
+    line-height: 22px;
   }
   .main-text-enter {
     position: absolute;
@@ -113,10 +113,8 @@
             <p>GAO</p>
           </div>
           <div class="main-text-detail">
-            <p>Time Files And My Roles May Change</p>
-            <p>Yet My Lige Goal Will Always Be The </p>
-            <p>All I Wanna Do Is To Witness, Record And Feel</p>
-            <p>That Every Single Moment In Your Life Is Real</p>
+            <p>
+              Time Files And My Roles May Change</br>Yet My Life Goal Will Always Be The Same</br>All I Wanna Do Is To Witness, Record And Feel</br>That Every Single Moment In Your Life Is Real</p>
           </div>
           <div class="main-text-enter">
             <p>-ENTER</p>

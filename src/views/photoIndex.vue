@@ -1,5 +1,6 @@
 <style type="text/css">
   .description > p {
+    text-align: justify;
     margin: 0;
   }
   .photoIndexH2 {
@@ -24,7 +25,6 @@
   .description-value {
     font-family: DINMedium;
     font-size: 14px;
-    line-height: 20px;
   }
   .prev {
     left: 0;
@@ -57,6 +57,9 @@
     line-height: 1.4rem;
     font-size: 1.4rem;
   }
+  .description > .description-value {
+    line-height: 30px;
+  }
   .description-name {
     font-size: 1.7rem !important;
     margin-bottom: 6px !important;
@@ -74,8 +77,11 @@
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     text-align: center;
-    padding: 20px 10%;
+    padding: 20px 10% 80px;
     box-sizing: border-box;
+  }
+  .description-value {
+    line-height: 20px;
   }
   .photoIndexH2 {
     margin-bottom: 1.4rem;
