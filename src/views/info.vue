@@ -32,6 +32,7 @@
       float: left;
     }
     .content {
+      font-family: DINMedium;
       float: left;
       font-size: 11px;
       line-height: 16px;

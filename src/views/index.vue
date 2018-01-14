@@ -66,14 +66,14 @@
     top: 0;
   }
   .main-text-title > p {
-    font-size: 42px;
+    font-size: 80px;
     margin: 0;
   }
   .main-text-detail {
     text-align: right;
     position: absolute;
     right: 3.7vw;
-    bottom: 6vh;
+    bottom: 3rem;
     border-bottom: 1px solid #fff;
     font-family: DINLight;
     font-size: 12px;
@@ -83,6 +83,9 @@
     position: absolute;
     bottom: 0;
     right: 3.7vw;
+  }
+  .main-text-enter > p {
+    margin: 0;
   }
   .to-center {
     display: block;

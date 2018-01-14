@@ -249,7 +249,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 空門",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. It maybe a drawing, or maybe an effect made by photoshop, without color. ",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
         },
       },
       {
@@ -264,7 +264,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - Wave",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. It maybe a drawing, or maybe an effect made by photoshop, without color. ",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
         },
       },
       {
@@ -276,7 +276,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 川",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. It maybe a drawing, or maybe an effect made by photoshop, without color. ",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
         },
       },
       {
@@ -307,7 +307,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 山活",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. It maybe a drawing, or maybe an effect made by photoshop, without color. ",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
 
         },
       },
@@ -316,7 +316,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 根",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. It maybe a drawing, or maybe an effect made by photoshop, without color. ",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
 
         },
       },
@@ -348,7 +348,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 萬里",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. It maybe a drawing, or maybe an effect made by photoshop, without color. ",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
 
         },
       },
@@ -364,7 +364,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 淨土",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. It maybe a drawing, or maybe an effect made by photoshop, without color. ",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
 
         },
       },
@@ -380,7 +380,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 互",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. It maybe a drawing, or maybe an effect made by photoshop, without color. ",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature.",
 
         },
       },
@@ -405,12 +405,12 @@ export default {
         },        
       },
       {
-        name: "PMA",
+        name: "PLA",
         length: 7,
         description: {
-          name: "Estpak Shenzhen KOL Gathering: Fun created by Food",
-          value: "Eastpak is a bag brand from North America.In June 2016, Eastlak engaged and interactive with the KOLs in order to spread brand recognition through 6 KOLs social medias, to create interesting content for brand communication.The theme of this activity is Fun created by Food, we invited 6 lifestyle KOLs in Shenzhen, sharing the stories how they record their life with food and Eastpak bag. </br>ROLE: PLANNER & EXECUTION"
-        },        
+          name: "Eastpak Beijing KOL Gathering: New Stories in Old City",
+          value: "Eastpak is a bag brand from North America.In October 2016, Eastlak engaged and interactive with the KOLs in order to spread brand recognition through KOLs social medias, to create interesting content for brand communication.The theme of this activity is New Stories in Old City, we invited 5 KOLs who were from small cities and living in Beijing now, sharing their stories with Eastpak bag. </br>ROLE: PLANNER & EXECUTION"
+        } 
       },
     ],
     center: [
@@ -425,6 +425,27 @@ export default {
         },
       },
       {
+        name: "PMA",
+        length: 7,
+        description: {
+          name: "Estpak Shenzhen KOL Gathering: Fun created by Food",
+          value: "Eastpak is a bag brand from North America.In June 2016, Eastlak engaged and interactive with the KOLs in order to spread brand recognition through 6 KOLs social medias, to create interesting content for brand communication.The theme of this activity is Fun created by Food, we invited 6 lifestyle KOLs in Shenzhen, sharing the stories how they record their life with food and Eastpak bag. </br>ROLE: PLANNER & EXECUTION"
+        },        
+      },
+    ],
+    right: [
+      {
+        name: "PRA-Z",
+        length: 1,
+        indexImgType: "gif",
+        video: "http://ot2ie5s0n.bkt.clouddn.com/PRA-Z.mp4",
+        videoCover: "http://ot2ie5s0n.bkt.clouddn.com/PRA-Z%20COVER.jpg",
+        description: {
+          name: "FENDI BB Family Social Campaign",
+          value: "FENDI is a famous luxury brand. They wanted to launch the BB Family(the bag hanging drops series) in China through social platforms. After analyzing FENDI’s performance on social media, and finding out the FENDI girls characteristic, their lifestyle and their definition of fashion. To see how to communicate with them on social platform with a different tonality. </br>ROLE: PLANNER "
+        } 
+      },
+      {
         name: "PRA",
         length: 8,
         indexImgType: "png",
@@ -435,16 +456,8 @@ export default {
           value: "This is a prevue of the documentary about how people's life change after the government gave the movable TVs in the Tibetan Areas of Sichuan and Yunnan. We spent two months in the Tibetan areas to collect materials for this documentary.</br>ROLE: FILM & CUTTER"
         },
       },
-    ],
-    right: [
-      {
-        name: "PLA",
-        length: 7,
-        description: {
-          name: "Eastpak Beijing KOL Gathering: New Stories in Old City",
-          value: "Eastpak is a bag brand from North America.In October 2016, Eastlak engaged and interactive with the KOLs in order to spread brand recognition through KOLs social medias, to create interesting content for brand communication.The theme of this activity is New Stories in Old City, we invited 5 KOLs who were from small cities and living in Beijing now, sharing their stories with Eastpak bag. </br>ROLE: PLANNER & EXECUTION"
-        } 
-      },
     ]
   }
 }
+
+

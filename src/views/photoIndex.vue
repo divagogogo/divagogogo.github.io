@@ -10,7 +10,8 @@
   .photoIndexH2 > b {
     cursor: pointer;
   }
-  .photoIndexH2 > span {
+  .photoIndexH2 > p {
+    margin: 0;
     height: 1.2rem;
     font-size: 1.2rem;
     font-weight: 300;
@@ -18,7 +19,7 @@
     position: absolute;
     cursor: pointer;
     height: 100%;
-    top: 30%;
+    top: 20%;
     font-size: 12px;  
     z-index: 100;
   }
@@ -54,11 +55,11 @@
     margin-bottom: 30px;
   }
   .description > p {
-    line-height: 1.4rem;
+    line-height: 30px;
     font-size: 1.4rem;
   }
   .description > .description-value {
-    line-height: 30px;
+    line-height: 20px;
   }
   .description-name {
     font-size: 1.7rem !important;
@@ -80,14 +81,17 @@
     padding: 20px 10% 80px;
     box-sizing: border-box;
   }
+  .description > p {
+    line-height: 26px;
+  }
   .description-value {
     line-height: 20px;
   }
   .photoIndexH2 {
     margin-bottom: 1.4rem;
   }
-  .photoIndexH2 > span {
-    font-size: 0.6rem;
+  .photoIndexH2 > p {
+    font-size: 12px;
   }
   .description {
     text-align: left;
@@ -128,9 +132,9 @@
 <template>
   <div class="photoIndex">
   <div class="photoIndexH2">
-    <span class="prev" :class="{ grey: noPrev }" @click="prevPage">prev -</span>
+    <p class="prev" :class="{ grey: noPrev }" @click="prevPage">prev -</p>
     <b @click="toList">{{$route.params.name}}</b>
-    <span class="next" :class="{ grey: noNext }" @click="nextPage">+ next</span>
+    <p class="next" :class="{ grey: noNext }" @click="nextPage">+ next</p>
 
  </div>
     <div class="description" v-if="photoData.hasOwnProperty('description')">
@@ -300,6 +304,7 @@ export default {
       }
     },
     indexImgType() {
+      console.log(this.photoData);
       return this.photoData.indexImgType ? this.photoData.indexImgType : 'jpg'
     }
   }
