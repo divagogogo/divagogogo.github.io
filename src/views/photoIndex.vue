@@ -1,4 +1,7 @@
 <style type="text/css">
+  .photoIndex {
+    
+  }
   .description > p {
     text-align: justify;
     margin: 0;
@@ -24,14 +27,18 @@
     z-index: 100;
   }
   .description-value {
-    font-family: DINMedium;
     font-size: 14px;
   }
   .prev {
     left: 0;
+    width: 100px;
+    text-align: left;
   }
   .next {
     right: 0;
+    width: 100px;
+    text-align: right;
+
   }
   .grey {
     color: grey;
@@ -131,12 +138,12 @@
 </style>
 <template>
   <div class="photoIndex">
-  <div class="photoIndexH2">
-    <p class="prev" :class="{ grey: noPrev }" @click="prevPage">prev -</p>
-    <b @click="toList">{{$route.params.name}}</b>
-    <p class="next" :class="{ grey: noNext }" @click="nextPage">+ next</p>
+    <div class="photoIndexH2">
+      <p class="prev" :class="{ grey: noPrev }" @click="prevPage">prev -</p>
+      <b @click="toList">{{$route.params.name}}</b>
+      <p class="next" :class="{ grey: noNext }" @click="nextPage">+ next</p>
 
- </div>
+   </div>
     <div class="description" v-if="photoData.hasOwnProperty('description')">
       <p class="description-name">{{photoData.description.name}}:</p>
       <p class="description-value" v-html="photoData.description.value"></p>
