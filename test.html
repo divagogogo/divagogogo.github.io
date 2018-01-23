@@ -3,18 +3,30 @@
 <head>
   <title></title>
 <style type="text/css">
-  div {
-    background-color: red;
-    height: auto;
-  }
-  img {
-    width: 200px;
-  }
+@font-face {
+  font-family: 'DINBold';
+  src: 
+      url('./src/assets/font/DINBold.woff') format('woff'),
+      url('./src/assets/font/DINBold.otf') format('otf'),
+      url('./src/assets/font/DINBold.ttf')  format('truetype')
+
+}
+@font-face {
+  font-family: 'DINLight';
+}
+@font-face {
+  font-family: DINMedium;
+  src: url('./src/assets/font/DINBold.ttf')  format('truetype')
+}
+.p1 {
+  font-family: DINBold;
+}ont-family: DINMedium;
+}
 </style>
 </head>
 <body>
 <div>
-  <img src="http://ot2ie5s0n.bkt.clouddn.com/AMA-X.jpg">
+  <p class="p1">test</p>
 </div>
 </body>
 </html>

@@ -2,29 +2,23 @@
 @font-face {
   font-family: DINBold;
   src: url('./assets/font/DINBold.woff') format('woff'),
+       url('./assets/font/DINBold.otf') format('otf'),
        url('./assets/font/DINBold.ttf')  format('truetype')
-       /*url('./assets/font/DINBold.otf')  format('otf')*/
 }
 @font-face {
   font-family: DINLight;
   src: url('./assets/font/DINLight.woff') format('woff'),
+       url('./assets/font/DINLight.otf')  format('otf'),
        url('./assets/font/DINLight.ttf')  format('truetype')
-       url('./assets/font/DINLight.otf')  format('otf')
-}
-@font-face {
-  font-family: DINMedium;
-  src: url('./assets/font/DINMedium.ttf') format('truetype');
-  src: url('./assets/font/DINMedium.otf') format('otf');
 }
 html {
   font-size: 62.5%;
 }
 html,body {
-  font-family: DINBold Futura, MeiHei, Helvetica, Arial, sans-serif;
+  font-family: DINBold;
   margin: 0;
   height: 100%;
   width: 100%;
-  /*overflow: hidden;*/
 }
 #app {
   width: 100%;

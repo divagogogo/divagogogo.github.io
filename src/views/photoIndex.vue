@@ -1,7 +1,4 @@
 <style type="text/css">
-  .photoIndex {
-    
-  }
   .description > p {
     text-align: justify;
     margin: 0;
