@@ -1,12 +1,13 @@
-<style scoped type="text/css">
-  
-  
-  
-  
+<style scoped type="text/css">  
   .text-bold {
     font-weight: 700;
   }
-
+  .content {
+    font-family: FuturaBook;
+  }
+  .text-bold {
+    font-family: FuturaBold;
+  }
   /*
   * 屏幕宽大于800px用以下css
   */
@@ -33,7 +34,7 @@
     }
     .content {
       float: left;
-      font-size: 11px;
+      font-size: 12px;
       line-height: 16px;
       margin-left: 4rem;
       color: #fff;
@@ -48,13 +49,11 @@
     .text-name {
       font-size: 24px;
       line-height: 24px;
-      font-family: DINBold;
     }
     .text-type {
       font-weight: 700;
       font-size: 16px;
       line-height: 28px;
-      font-family: DINBold;
     }
   }
 
@@ -83,7 +82,7 @@
       
     }
     .content {
-      font-size: 10px;
+      font-size: 12px;
       line-height: 15px;
       color: #fff;
       text-align: center;
@@ -101,13 +100,11 @@
       .text-name {
       font-size: 22px;
       line-height: 22px;
-      font-family: DINBold;
     }
     .text-type {
       font-weight: 700;
       font-size: 14px;
       line-height: 22px;
-      font-family: DINBold;
     }
   }
 </style>

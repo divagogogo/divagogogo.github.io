@@ -75,7 +75,7 @@
     right: 3.7vw;
     bottom: 3rem;
     border-bottom: 1px solid #fff;
-    font-family: DINLight;
+    font-family: FuturaBook;
     font-size: 12px;
     line-height: 22px;
   }

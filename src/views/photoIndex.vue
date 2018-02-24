@@ -25,15 +25,19 @@
   }
   .description-value {
     font-size: 14px;
+    font-family: FuturaBook;
+  }
+  .prev,
+  .next {
+    width: 100px;
+    font-family: FuturaBook;
   }
   .prev {
     left: 0;
-    width: 100px;
     text-align: left;
   }
   .next {
     right: 0;
-    width: 100px;
     text-align: right;
 
   }

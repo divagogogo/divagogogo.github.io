@@ -1,21 +1,21 @@
 <style type="text/css">
 @font-face {
-  font-family: DINBold;
-  src: url('./assets/font/DINBold.woff') format('woff'),
-       url('./assets/font/DINBold.otf') format('otf'),
-       url('./assets/font/DINBold.ttf')  format('truetype')
+  font-family: FuturaBold;
+  src: url('./assets/font/FuturaBold.woff') format('woff'),
+       url('./assets/font/FuturaBold.otf') format('otf'),
+       url('./assets/font/FuturaBold.ttf')  format('truetype');
 }
 @font-face {
-  font-family: DINLight;
-  src: url('./assets/font/DINLight.woff') format('woff'),
-       url('./assets/font/DINLight.otf')  format('otf'),
-       url('./assets/font/DINLight.ttf')  format('truetype')
+  font-family: FuturaBook;
+  src: url('./assets/font/FuturaBook.woff') format('woff'),
+       url('./assets/font/FuturaBook.otf')  format('otf'),
+       url('./assets/font/FuturaBook.ttf')  format('truetype');
 }
 html {
   font-size: 62.5%;
 }
 html,body {
-  font-family: DINBold;
+  font-family: FuturaBold;
   margin: 0;
   height: 100%;
   width: 100%;

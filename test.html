@@ -6,8 +6,8 @@
 @font-face {
   font-family: 'DINBold';
   src: 
-      url('./src/assets/font/DINBold.woff') format('woff'),
       url('./src/assets/font/DINBold.otf') format('otf'),
+      url('./src/assets/font/DINBold.woff') format('woff'),
       url('./src/assets/font/DINBold.ttf')  format('truetype')
 
 }
@@ -16,17 +16,27 @@
 }
 @font-face {
   font-family: DINMedium;
-  src: url('./src/assets/font/DINBold.ttf')  format('truetype')
+  src: 
+      url('./src/assets/font/DINBold.woff') format('woff'),
+      url('./src/assets/font/DINBold.otf') format('otf'),
+      url('./src/assets/font/DINBold.ttf')  format('truetype');
 }
 .p1 {
   font-family: DINBold;
-}ont-family: DINMedium;
+}
+.p2 {
+  font-family: DINMedium;
+}
+.p3 {
+  font-family: DINBold;
 }
 </style>
 </head>
 <body>
 <div>
-  <p class="p1">test</p>
+  <p class="p1">test1</p>
+  <p class="p2">test2</p>
+  <p class="p3">test3</p>
 </div>
 </body>
 </html>
