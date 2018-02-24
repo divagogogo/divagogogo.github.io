@@ -1,16 +1,19 @@
 <style type="text/css">
   .description > p {
     text-align: justify;
+    vertical-align: top;
     margin: 0;
   }
   .photoIndexH2 {
     position: relative;
     text-transform: uppercase;
+    height: 20px;
   }
-  .photoIndexH2 > b {
+  .photoIndexH2 > span {
     cursor: pointer;
+    display: inline-block;
   }
-  .photoIndexH2 > p {
+  .photoIndexH2 > div {
     margin: 0;
     height: 1.2rem;
     font-size: 1.2rem;
@@ -18,7 +21,6 @@
     display: inline-block;
     position: absolute;
     cursor: pointer;
-    height: 100%;
     top: 20%;
     font-size: 12px;  
     z-index: 100;
@@ -26,6 +28,7 @@
   .description-value {
     font-size: 14px;
     font-family: FuturaBook;
+
   }
   .prev,
   .next {
@@ -98,6 +101,10 @@
   .photoIndexH2 {
     margin-bottom: 1.4rem;
   }
+  .photoIndexH2 > span {
+    margin-top: 4px;
+  }
+
   .photoIndexH2 > p {
     font-size: 12px;
   }
@@ -140,9 +147,9 @@
 <template>
   <div class="photoIndex">
     <div class="photoIndexH2">
-      <p class="prev" :class="{ grey: noPrev }" @click="prevPage">prev -</p>
-      <b @click="toList">{{$route.params.name}}</b>
-      <p class="next" :class="{ grey: noNext }" @click="nextPage">+ next</p>
+      <div class="prev" :class="{ grey: noPrev }" @click="prevPage">prev -</div>
+      <span @click="toList">{{$route.params.name}}</span>
+      <div class="next" :class="{ grey: noNext }" @click="nextPage">+ next</div>
 
    </div>
     <div class="description" v-if="photoData.hasOwnProperty('description')">
