@@ -142,7 +142,14 @@
   padding-bottom: 56.25% !important;
 }
 
-
+.aplayer {
+/*TODO: fix style*/
+  width: 100%; 
+/*  max-width: 64rem;
+   margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;*/
+}
 </style>
 <template>
   <div class="photoIndex">
@@ -151,10 +158,27 @@
       <span @click="toList">{{$route.params.name}}</span>
       <div class="next" :class="{ grey: noNext }" @click="nextPage">+ next</div>
 
-   </div>
+    </div>
     <div class="description" v-if="photoData.hasOwnProperty('description')">
-      <p class="description-name">{{photoData.description.name}}:</p>
-      <p class="description-value" v-html="photoData.description.value"></p>
+        <p class="description-name">{{photoData.description.name}}:</p>
+        <p class="description-value" v-html="photoData.description.value"></p>
+    </div>
+    <div v-if="photoData.hasOwnProperty('audio')">
+      <aplayer
+        autoplay
+        mutex
+        theme="#42b983"
+        preload="metadata"
+        mode="circulation"          
+        :music="{
+          /*TODO: use audioPlayerOptions*/
+          //audioPlayerOptions
+          title: this.photoData.audioTitle,
+          author: this.photoData.audioAuthor,
+          url: this.photoData.audio,
+          pic: this.photoData.audioCover
+        }">
+      </aplayer>
     </div>
     <div class="video-wrap" v-if="photoData.hasOwnProperty('video')">
         <video-player  ref="videoPlayer" 
@@ -168,9 +192,11 @@
 
 <script type="text/javascript">
 import photos from '../photos.js';
+import Aplayer from '../vue-aplayer.vue'
 import { videoPlayer } from 'vue-video-player'
 export default {
   components: {
+    Aplayer,
     videoPlayer
   },
   data() {
@@ -310,6 +336,20 @@ export default {
       let routeParams = this.$route.params;
       return photos[routeParams.name][routeParams.position][routeParams.n];
     },
+    audioPlayerOptions() {
+      /*TODO: use audioPlayerOptions*/
+      let title = {title: this.photoData.audioTitle};
+      let author = {author: this.photoData.audioAuthor};
+      let url = {url: this.photoData.audio};
+      let pic = {pic: this.photoData.audioCover};
+      return {
+        title,
+        author,
+        url,
+        pic
+      }
+    },
+ 
     playerOptions() {
       let sources = [{type: "video/mp4", src: this.photoData.video}];
       let poster = this.photoData.videoCover;

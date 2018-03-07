@@ -124,12 +124,13 @@
         <span class="text-bold">Contact Me:</span></br>Email: divagogogo@gmail.com</br>
         <a href="http://weibo.com/divago/home"><img class="info-icon" src="../assets/weibo.png"></a>
         <a href="https://www.instagram.com/lovedivago/"><img class="info-icon" src="../assets/instagram.png"></a>
-      </div>
+      </div> 
     </div>
   </div>
 </div>
 </template>
 <script type="text/javascript">
-export default {
+
+  export default {
 }
 </script>

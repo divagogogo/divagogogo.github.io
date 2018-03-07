@@ -16,3 +16,13 @@ npm run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+2018.3.7
+
+- add audio player
+
+``` bash
+npm install vue-aplayer --save
+```
+
+- three TODO in photoIndex.vue

@@ -4,6 +4,10 @@ export default {
       {
         name: "LA-W1",
         length: 9,
+        audio: 'http://ot2ie5s0n.bkt.clouddn.com/for_gao_recording.mp3',
+        audioCover: 'http://ot2ie5s0n.bkt.clouddn.com/Info.jpg',
+        audioTitle: 'for_gao_recording',
+        audioAuthor: 'Gao',
         description: {
           name: "Child Circle",
           value: "I hope can be back to my child time, to be wild again. </br>MODEL: POLINA</br>SHOOTING IN SHANGHAI",
