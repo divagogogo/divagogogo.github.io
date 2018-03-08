@@ -4,10 +4,6 @@ export default {
       {
         name: "LA-W1",
         length: 9,
-        audio: 'http://ot2ie5s0n.bkt.clouddn.com/for_gao_recording.mp3',
-        audioCover: 'http://ot2ie5s0n.bkt.clouddn.com/Info.jpg',
-        audioTitle: 'for_gao_recording',
-        audioAuthor: 'Gao',
         description: {
           name: "Child Circle",
           value: "I hope can be back to my child time, to be wild again. </br>MODEL: POLINA</br>SHOOTING IN SHANGHAI",
@@ -161,10 +157,6 @@ export default {
         length: 1,
       },
       {
-        name: "MF",
-        length: 1,
-      },
-      {
         name: "MG",
         length: 9,
         description: {
@@ -177,6 +169,26 @@ export default {
       },
     ],
     right: [
+      {
+        name: "RA-V",
+        length: 9,
+        audio: 'http://ot2ie5s0n.bkt.clouddn.com/for_gao_recording.mp3',
+        audioCover: 'http://ot2ie5s0n.bkt.clouddn.com/Info.jpg',
+        audioTitle: 'Mounting',
+        audioAuthor: 'Gao',
+        description: {
+          name: "ORDER - Mounting",
+          value: "\"That is a truer world\"</br>Struggling. From home to the big city. From moist, puzzled, to sleepy and contrived. This is not myself.</br>Though attach to the past, I will still move forward. Regardless of the consequences. Until find the real me</br></br>ORDER project is a new episode of my photo project. It is not about the what call youth culture, and also doesn‘t limit with the youth. But the power of them, is what i wanna express. The project ORDER, is to discover the power of order around myself. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.</br>Play with them, create with them, express with them. Their power of ORDER</br>MODEL: FREDDIE</br>SHOOTING IN RONDA,SPAIN",
+        }, 
+      },
+      {
+        name: "RA-W",
+        length: 12,
+        description: {
+          name: "Crossing",
+          value: "SHOOTING IN SPAIN",
+        }, 
+      },
       {
         name: "RA-X",
         length: 9,
@@ -229,20 +241,8 @@ export default {
         length: 4,
       },
       {
-        name: "RB",
-        length: 9,
-      },
-      {
         name: "RG",
         length: 9,
-      },
-      {
-        name: "RH",
-        length: 2,
-      },
-      {
-        name: "MI",
-        length: 4,
       },
     ],
   },
@@ -300,6 +300,15 @@ export default {
     ],
     center: [
       {
+        name: "AMA-V",
+        length: 1,
+        description: {
+          name: "ZEN - 川流",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
+
+        },
+      },
+      {
         name: "AMA-Z",
         length: 3,
         description: {
@@ -316,19 +325,19 @@ export default {
         },
       },
       {
+        name: "AMA",
+        length: 7,
+        description: {
+          name: "Socrate Cafe VI - Guangdong",
+        },
+      },
+      {
         name: "AMA-Y",
         length: 1,
         description: {
           name: "ZEN - 根",
           value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
 
-        },
-      },
-      {
-        name: "AMA",
-        length: 7,
-        description: {
-          name: "Socrate Cafe VI - Guangdong",
         },
       },
       {
