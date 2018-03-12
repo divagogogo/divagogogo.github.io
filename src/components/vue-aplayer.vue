@@ -42,10 +42,10 @@
   </div>
 </template>
 <script type="text/babel">
-  import Thumbnail from './components/aplayer-thumbnail.vue'
-  import MusicList from './components/aplayer-list.vue'
-  import Controls from './components/aplayer-controller.vue'
-  import Lyrics from './components/aplayer-lrc.vue'
+  import Thumbnail from './aplayer-thumbnail.vue'
+  import MusicList from './aplayer-list.vue'
+  import Controls from './aplayer-controller.vue'
+  import Lyrics from './aplayer-lrc.vue'
 
   let activeMutex = null
   let instanceId = 1
@@ -340,7 +340,7 @@
         if (this.autoplay !== null) {
           if (!this.autoplay) {
             this.playIndex = 0
-            this.thenPlay()
+            //this.thenPlay()
           } else {
             let autoplaySong = this.musicList.find(song => song.url === this.autoplay)
             if (autoplaySong) {
@@ -378,7 +378,7 @@
 </script>
 
 <style lang="scss">
-  @import "./scss/variables";
+  @import "../scss/variables";
 
   .aplayer-narrow {
     width: $aplayer-height;

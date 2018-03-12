@@ -22,7 +22,7 @@
     position: absolute;
     cursor: pointer;
     top: 20%;
-    font-size: 12px;  
+    font-size: 12px;
     z-index: 100;
   }
   .description-value {
@@ -144,7 +144,7 @@
 
 .aplayer {
 /*TODO: fix style*/
-  width: 100%; 
+  width: 100%;
 /*  max-width: 64rem;
    margin-left: auto;
   margin-right: auto;
@@ -169,7 +169,7 @@
         mutex
         theme="#42b983"
         preload="metadata"
-        mode="circulation"          
+        mode="circulation"
         :music="{
           /*TODO: use audioPlayerOptions*/
           //audioPlayerOptions
@@ -181,18 +181,18 @@
       </aplayer>
     </div>
     <div class="video-wrap" v-if="photoData.hasOwnProperty('video')">
-        <video-player  ref="videoPlayer" 
+        <video-player  ref="videoPlayer"
             :options="playerOptions">
         </video-player>
     </div>
-    <img v-for="n in photoData.length" 
+    <img v-for="n in photoData.length"
       v-lazy="'http://ot2ie5s0n.bkt.clouddn.com/' + photoData.name + '/' + n + '.' + indexImgType">
   </div>
 </template>
 
 <script type="text/javascript">
 import photos from '../photos.js';
-import Aplayer from '../vue-aplayer.vue'
+import Aplayer from '../components/vue-aplayer.vue'
 import { videoPlayer } from 'vue-video-player'
 export default {
   components: {
@@ -253,7 +253,7 @@ export default {
             })
           }
           break;
-        case 'center': 
+        case 'center':
           this.$router.push({
             name,
             params: {
@@ -300,7 +300,7 @@ export default {
           const rightLength = photos[params.name].right.length;
           if (params.n > rightLength - 1) {
             this.noNext = true;
-            return false;            
+            return false;
           } else {
             this.$router.push({
               name,
@@ -309,14 +309,14 @@ export default {
                 position: 'right',
                 n: +params.n
               }
-            })            
+            })
           }
-          break;        
+          break;
         case 'right':
           const leftLength = photos[params.name].left.length;
           if (params.n >= leftLength - 1) {
             this.noNext = true;
-            return false; 
+            return false;
           } else {
             this.$router.push({
               name,
@@ -325,7 +325,7 @@ export default {
                 position: 'left',
                 n: +params.n + 1
               }
-            })    
+            })
           }
           break;
       }
@@ -349,7 +349,7 @@ export default {
         pic
       }
     },
- 
+
     playerOptions() {
       let sources = [{type: "video/mp4", src: this.photoData.video}];
       let poster = this.photoData.videoCover;
