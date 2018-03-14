@@ -170,15 +170,15 @@ export default {
     ],
     right: [
       {
-        name: "RA-V",
+        name: "RA-V1",
         length: 9,
-        audio: 'http://ot2ie5s0n.bkt.clouddn.com/for_gao_recording.mp3',
-        audioCover: 'http://ot2ie5s0n.bkt.clouddn.com/Info.jpg',
+        audio: 'http://ot2ie5s0n.bkt.clouddn.com/recording2.mp3',
+        audioCover: 'http://ot2ie5s0n.bkt.clouddn.com/RA-V1%20cover.jpg',
         audioTitle: 'Mounting',
-        audioAuthor: 'Gao',
+        audioAuthor: 'Freddie',
         description: {
           name: "ORDER - Mounting",
-          value: "\"That is a truer world\"</br>Struggling. From home to the big city. From moist, puzzled, to sleepy and contrived. This is not myself.</br>Though attach to the past, I will still move forward. Regardless of the consequences. Until find the real me</br></br>ORDER project is a new episode of my photo project. It is not about the what call youth culture, and also doesn‘t limit with the youth. But the power of them, is what i wanna express. The project ORDER, is to discover the power of order around myself. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.</br>Play with them, create with them, express with them. Their power of ORDER</br>MODEL: FREDDIE</br>SHOOTING IN RONDA,SPAIN",
+          value: "\"That is a truer world\"</br>Struggling. From home to the big city. From moist, puzzled, to sleepy and contrived. This is not myself.</br>Though attach to the past, I will still move forward. Regardless of the consequences. Until find the real me</br></br>ORDER project is a new episode of my photo project. It is not about the what call youth culture, and also doesn‘t limit with the youth. But the power of them, is what i wanna express. The project ORDER, is to discover the power of order around me. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.</br>Play with them, create with them, express with them. Their power of ORDER</br>MODEL: FREDDIE</br>SHOOTING IN RONDA,SPAIN",
         }, 
       },
       {
