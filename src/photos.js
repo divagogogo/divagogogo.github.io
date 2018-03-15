@@ -6,7 +6,7 @@ export default {
         length: 9,
         description: {
           name: "Child Circle",
-          value: "I hope could be back to my child time, to be wild again. </br>MODEL: POLINA</br>SHOOTING IN SHANGHAI",
+          value: "I hope could be back to my childhood, to be wild again. </br>MODEL: POLINA</br>SHOOTING IN SHANGHAI",
         },  
       },
       {
