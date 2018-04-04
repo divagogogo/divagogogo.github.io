@@ -35,6 +35,7 @@
     .content {
       float: left;
       font-size: 12px;
+      letter-spacing: 1px;
       line-height: 16px;
       margin-left: 4rem;
       color: #fff;
@@ -83,6 +84,7 @@
     }
     .content {
       font-size: 12px;
+      letter-spacing: 1px;
       line-height: 15px;
       color: #fff;
       text-align: center;
@@ -115,7 +117,7 @@
       <img class="info-img" src="http://ot2ie5s0n.bkt.clouddn.com/Info.jpg">
       <div class="content">
         <span class="text-name"><span class="text-bold">Diva.Gao</span> 高价硬</span></br>
-        <span class="text-type">PHOTOGRAPHER / DESIGN  / PLANNING</span></br>
+        <span class="text-type">PHOTOS / DESIGN / STRATEGY</span></br>
         </br>
         <span class="text-bold">Education:</span></br>Advertising Bachelor Degree (2013 - 2017) <span class="dis-block"></span>- Jinan University (Guangzhou)</br>
         </br>
