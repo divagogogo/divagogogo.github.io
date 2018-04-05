@@ -265,7 +265,7 @@ export default {
           name: "ZEN - 潮",
           value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
         },
-
+      },
       {
         name: "ALA-X",
         length: 1,
