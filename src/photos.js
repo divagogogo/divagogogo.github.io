@@ -2,12 +2,23 @@ export default {
   photo: {
     left: [
       {
-        name: "LA-W1",
+        name: "RA-V1",
+        length: 9,
+        audio: 'http://ot2ie5s0n.bkt.clouddn.com/recording2.mp3',
+        audioCover: 'http://ot2ie5s0n.bkt.clouddn.com/RA-V1%20cover.jpg',
+        audioTitle: 'Mounting',
+        audioAuthor: 'Freddie',
+        description: {
+          name: "ORDER - Mounting",
+          value: "\"That is a truer world\"</br>Struggling. From home to the big city. From moist, puzzled, to sleepy and contrived. This is not myself.</br>Though attach to the past, I will still move forward. Regardless of the consequences. Until find the real me</br></br>ORDER project is a new episode of my photo project. It is not about the what call youth culture, and also doesn‘t limit with the youth. But the power of them, is what i wanna express. The project ORDER, is to discover the power of order around me. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.</br>Play with them, create with them, express with them. Their power of ORDER</br>MODEL: FREDDIE</br>SHOOTING IN RONDA,SPAIN",
+        }, 
+      },
+      {
+        name: "LA-V",
         length: 9,
         description: {
-          name: "Child Circle",
-          value: "I hope could be back to my childhood, to be wild again. </br>MODEL: POLINA</br>SHOOTING IN SHANGHAI",
-        },  
+          name: "City - HK",
+        },        
       },
       {
         name: "LA-X",
@@ -63,18 +74,6 @@ export default {
         }, 
       },
       {
-        name: "LE",
-        length: 1,
-        description: {
-          name: "New Born",
-          value: "MODEL: COCO</br>SHOOTING IN SHANGHAI",
-        }, 
-      },
-      {
-        name: "LF",
-        length: 9,
-      },
-      {
         name: "LG",
         length: 8,
       },
@@ -100,6 +99,13 @@ export default {
         }, 
       },
       {
+        name: "MA-T",
+        length: 9,
+        description: {
+          name: "City - MACAU",
+        }, 
+      },
+      {
         name: "MA-W",
         length: 6,
         description: {
@@ -109,10 +115,10 @@ export default {
       },
       {
         name: "MA-Y",
-        length: 11,
+        length: 9,
         description: {
           name: "-",
-          value: "MODEL: JC&DY</br>SHOOTING IN ZHUHAI",
+          value: "MODEL: JC & DY</br>SHOOTING IN ZHUHAI",
         }, 
       },
       {
@@ -170,16 +176,12 @@ export default {
     ],
     right: [
       {
-        name: "RA-V1",
+        name: "LA-W1",
         length: 9,
-        audio: 'http://ot2ie5s0n.bkt.clouddn.com/recording2.mp3',
-        audioCover: 'http://ot2ie5s0n.bkt.clouddn.com/RA-V1%20cover.jpg',
-        audioTitle: 'Mounting',
-        audioAuthor: 'Freddie',
         description: {
-          name: "ORDER - Mounting",
-          value: "\"That is a truer world\"</br>Struggling. From home to the big city. From moist, puzzled, to sleepy and contrived. This is not myself.</br>Though attach to the past, I will still move forward. Regardless of the consequences. Until find the real me</br></br>ORDER project is a new episode of my photo project. It is not about the what call youth culture, and also doesn‘t limit with the youth. But the power of them, is what i wanna express. The project ORDER, is to discover the power of order around me. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.</br>Play with them, create with them, express with them. Their power of ORDER</br>MODEL: FREDDIE</br>SHOOTING IN RONDA,SPAIN",
-        }, 
+          name: "Child Circle",
+          value: "I hope could be back to my childhood, to be wild again. </br>MODEL: POLINA</br>SHOOTING IN SHANGHAI",
+        },  
       },
       {
         name: "RA-W",
@@ -249,18 +251,27 @@ export default {
   art: {
     left: [
       {
+        name: "ALA-Z1",
+        length: 6,
+        description: {
+          name: "CAKENAIRE VI & LOGO - Beijing (TBC)",
+          value: "CAKENAIRE is a dessert shop and bar in Beijing. This logo and VI design integrate the founder’s spirits, which is the power and softness as a mother.",
+        },
+      },
+      {
+        name: "ALA-V",
+        length: 1,
+        description: {
+          name: "ZEN - 潮",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
+        },
+
+      {
         name: "ALA-X",
         length: 1,
         description: {
           name: "ZEN - 空門",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
-        },
-      },
-      {
-        name: "ALA-Z",
-        length: 2,
-        description: {
-          name: "Cakenaire VI - Beijing (TBC)",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
         },
       },
       {
@@ -268,7 +279,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - Wave",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
         },
       },
       {
@@ -280,7 +291,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 川",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
         },
       },
       {
@@ -304,8 +315,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 川流",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
-
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
         },
       },
       {
@@ -316,12 +326,20 @@ export default {
         },
       },
       {
+        name: "AMA-U",
+        length: 1,
+        indexImgType: "gif",
+        description: {
+          name: "ZEN - 一目了然",
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
+        },
+      },
+      {
         name: "AMA-X",
         length: 1,
         description: {
           name: "ZEN - 山活",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
-
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
         },
       },
       {
@@ -336,8 +354,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 根",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
-
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
         },
       },
       {
@@ -361,8 +378,15 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 萬里",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
-
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
+        },
+      },
+      {
+        name: "ARA-V",
+        length: 1,
+        description: {
+          name: "MALA BEAR SAMPLER EP Album Cover",
+          value: "MALA BEAR SAMPLER EP is a electronic music EP created by a Indonesia musician. And this EP shows his bleaker and darkness in his heart.",
         },
       },
       {
@@ -377,8 +401,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 淨土",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
-
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature. ",
         },
       },
       {
@@ -393,8 +416,7 @@ export default {
         length: 1,
         description: {
           name: "ZEN - 互",
-          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhismthat originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature.",
-
+          value: "ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature.",
         },
       },
       {
@@ -404,7 +426,14 @@ export default {
           name: "Free",
         },
       },
-
+      {
+        name: "ALB",
+        length: 5,
+        description: {
+          name: "i.i.link LOGO﹣HK",
+          value: "i.i.link is a old man assistance company with internet methods. This LOGO design is showing the helping, love and connection.",
+        },
+      },
     ],
   },
   project: {
