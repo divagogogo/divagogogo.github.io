@@ -93,10 +93,10 @@
     box-sizing: border-box;
   }
   .description > p {
-    line-height: 26px;
+    line-height: 18px;
   }
   .description-value {
-    line-height: 20px;
+    line-height: 14px;
   }
   .photoIndexH2 {
     margin-bottom: 1.4rem;
@@ -179,6 +179,7 @@
           pic: this.photoData.audioCover
         }">
       </aplayer>
+      <br>
     </div>
     <div class="video-wrap" v-if="photoData.hasOwnProperty('video')">
         <video-player  ref="videoPlayer"
