@@ -2,6 +2,14 @@ export default {
   photo: {
     left: [
       {
+        name: "LA-U",
+        length: 9,
+        description: {
+          name: "ORDER - HOME OR MALL",
+          value: "Break the boundary of home and mall!</br></br>ORDER project is a new episode of my photo project. It is not about the what call youth culture, and also doesn‘t limit with the youth. But the power of them, is what i wanna express. The project ORDER, is to discover the power of order around me. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.</br>Play with them, create with them, express with them. Their power of ORDER</br>MODEL: SABRINA</br>DESIGNER: FIONA</br>SHOOTING IN SH",
+        }, 
+      },
+      {
         name: "RA-V1",
         length: 9,
         audio: 'http://ot2ie5s0n.bkt.clouddn.com/recording2.mp3',
@@ -84,10 +92,19 @@ export default {
     ],
     center: [
       {
-        name: "MA-U",
+        name: "MA-R",
         length: 9,
         description: {
-          name: "Fall",
+          name: "ORDER - BACK TO OVAL",
+          value: "Recharge from the safety of oval</br></br>ORDER project is a new episode of my photo project. It is not about the what call youth culture, and also doesn‘t limit with the youth. But the power of them, is what i wanna express. The project ORDER, is to discover the power of order around me. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.</br>Play with them, create with them, express with them. Their power of ORDER</br>MODEL: LEVU</br>SHOOTING IN SH",
+        }, 
+      },
+      {
+        name: "MA-S",
+        length: 6,
+        description: {
+          name: "ORDER - PLANET MOVEMENT",
+          value: "Feel the energy, of the planet movement</br></br>ORDER project is a new episode of my photo project. It is not about the what call youth culture, and also doesn‘t limit with the youth. But the power of them, is what i wanna express. The project ORDER, is to discover the power of order around me. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.</br>Play with them, create with them, express with them. Their power of ORDER</br>MODEL: SABRINA</br>DESIGNER: FIONA</br>SHOOTING IN SH",
         }, 
       },
       {
@@ -103,14 +120,6 @@ export default {
         length: 9,
         description: {
           name: "City - MACAU",
-        }, 
-      },
-      {
-        name: "MA-W",
-        length: 6,
-        description: {
-          name: "Deep Lady",
-          value: "MODEL: KEKE</br>SHOOTING IN SHANGHAI",
         }, 
       },
       {
@@ -182,6 +191,13 @@ export default {
           name: "Child Circle",
           value: "I hope could be back to my childhood, to be wild again. </br>MODEL: POLINA</br>SHOOTING IN SHANGHAI",
         },  
+      },
+      {
+        name: "MA-U",
+        length: 9,
+        description: {
+          name: "Fall",
+        }, 
       },
       {
         name: "RA-W",
