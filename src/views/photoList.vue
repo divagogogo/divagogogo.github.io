@@ -105,7 +105,7 @@ margin-bottom: 40px;
         </div>
       </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br> /*To fix Safari problem*/
+    <br><br><br><br><br><br><br><br><br><br>
   </div>
 </div>
 </template>
