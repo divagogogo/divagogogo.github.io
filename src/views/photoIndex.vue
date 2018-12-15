@@ -187,7 +187,7 @@
         </video-player>
     </div>
     <img v-for="n in photoData.length"
-      v-lazy="'http://ot2ie5s0n.bkt.clouddn.com/' + photoData.name + '/' + n + '.' + indexImgType">
+      v-lazy="'http://go.divagao.com/' + photoData.name + '/' + n + '.' + indexImgType">
   </div>
 </template>
 
