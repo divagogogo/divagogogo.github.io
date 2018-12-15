@@ -114,7 +114,7 @@
 <div>
   <div class="container">
     <div class="box" v-once>
-      <img class="info-img" src="http://ot2ie5s0n.bkt.clouddn.com/Info.jpg">
+      <img class="info-img" src="http://go.divagao.com/Info.jpg">
       <div class="content">
         <span class="text-name"><span class="text-bold">Diva.Gao</span> 高价硬</span></br>
         <span class="text-type">PHOTOS / DESIGN / STRATEGY</span></br>

@@ -91,17 +91,17 @@ margin-bottom: 40px;
     <div class="photo-boxes">
       <div class="box">
         <div class="photos-wrap" :class="{'no-color': routeName !== 'photo'}" v-for="(item, index) in photoData.left" @click="toIndex('left', index)">
-          <img class="photos" v-lazy="'http://ot2ie5s0n.bkt.clouddn.com/' + item.name + '.jpg'">
+          <img class="photos" v-lazy="'http://go.divagao.com/' + item.name + '.jpg'">
         </div>
       </div>
       <div class="box">
         <div class="photos-wrap" :class="{'no-color': routeName !== 'photo'}" v-for="(item, index) in photoData.center" @click="toIndex('center', index)">
-          <img class="photos" v-lazy="'http://ot2ie5s0n.bkt.clouddn.com/' + item.name + '.jpg'">
+          <img class="photos" v-lazy="'http://go.divagao.com/' + item.name + '.jpg'">
         </div>
       </div>
       <div class="box">
         <div class="photos-wrap" :class="{'no-color': routeName !== 'photo'}" v-for="(item, index) in photoData.right" @click="toIndex('right', index)">
-          <img class="photos" v-lazy="'http://ot2ie5s0n.bkt.clouddn.com/' + item.name + '.jpg'">
+          <img class="photos" v-lazy="'http://go.divagao.com/' + item.name + '.jpg'">
         </div>
       </div>
     </div>

@@ -113,7 +113,7 @@
       </router-link>
       <router-link v-show="routenochange" class="album-box" to="/project">
         <div class="album-img-wrap">
-          <img class="album-img" src="http://ot2ie5s0n.bkt.clouddn.com/project.jpg">
+          <img class="album-img" src="http://go.divagao.com/project.jpg">
         </div>
         <p>project</p>
       </router-link>
