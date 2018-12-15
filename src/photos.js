@@ -12,8 +12,8 @@ export default {
       {
         name: "RA-V1",
         length: 9,
-        audio: 'http://ot2ie5s0n.bkt.clouddn.com/recording2.mp3',
-        audioCover: 'http://ot2ie5s0n.bkt.clouddn.com/RA-V1%20cover.jpg',
+        audio: 'http://go.divagao.com/recording2.mp3',
+        audioCover: 'http://go.divagao.com/RA-V1%20cover.jpg',
         audioTitle: 'Mounting',
         audioAuthor: 'Freddie',
         description: {
@@ -475,8 +475,8 @@ export default {
       {
         name: "PLA-Z",
         length: 5,
-        video: "http://ot2ie5s0n.bkt.clouddn.com/PLA-Z%2060S.mp4",
-        videoCover: "http://ot2ie5s0n.bkt.clouddn.com/60s.jpg",
+        video: "http://go.divagao.com/PLA-Z%2060S.mp4",
+        videoCover: "http://go.divagao.com/60s.jpg",
         description: {
           name: "Airbnb. Welcome Love",
           value: "Airbnb's global mission \"Belong Anywhere\" doesn't translate well to Chinese. The brand needed a new name and strategy to connect with China's millennial travellers, a community of 384 million and growing, bigger than the entire US population.For the rebrand of Airbnb in China – Ai Bi Ying which means \"Welcome Each Other With Love\", AKQA Shanghai created an integrated campaign showing how travel opens us to a new world of love. All we have to do is welcome it.Through an anthem film, OOH and digital comms, we featured the unique homes, friendly hosts, vibrant neighbuorhoods, and unforgettable experiences you can book with Airbnb.</br>ROLE: PLANNER "
@@ -496,8 +496,8 @@ export default {
         name: "PRA-Z",
         length: 1,
         indexImgType: "gif",
-        video: "http://ot2ie5s0n.bkt.clouddn.com/PRA-Z.mp4",
-        videoCover: "http://ot2ie5s0n.bkt.clouddn.com/PRA-Z%20COVER.jpg",
+        video: "http://go.divagao.com/PRA-Z.mp4",
+        videoCover: "http://go.divagao.com/PRA-Z%20COVER.jpg",
         description: {
           name: "FENDI BB Family Social Campaign",
           value: "FENDI is a famous luxury brand. They wanted to launch the BB Family(the bag hanging drops series) in China through social platforms. After analyzing FENDI’s performance on social media, and finding out the FENDI girls characteristic, their lifestyle and their definition of fashion. To see how to communicate with them on social platform with a different tonality. </br>ROLE: PLANNER "
@@ -507,8 +507,8 @@ export default {
         name: "PRA",
         length: 8,
         indexImgType: "png",
-        video: "http://ot2ie5s0n.bkt.clouddn.com/PRA%20S.mp4",
-        videoCover: "http://ot2ie5s0n.bkt.clouddn.com/PRA/3.png",
+        video: "http://go.divagao.com/PRA%20S.mp4",
+        videoCover: "http://go.divagao.com/PRA/3.png",
         description: {
           name: "Love from Overseas Chinese",
           value: "This is a prevue of the documentary about how people's life change after the government gave the movable TVs in the Tibetan Areas of Sichuan and Yunnan. We spent two months in the Tibetan areas to collect materials for this documentary.</br>ROLE: FILM & CUTTER"
