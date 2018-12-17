@@ -119,9 +119,9 @@
         <span class="text-name"><span class="text-bold">Diva.Gao</span> 高价硬</span></br>
         <span class="text-type">PHOTOS / DESIGN / STRATEGY</span></br>
         </br>
-        <span class="text-bold">Education:</span></br>Advertising Bachelor Degree (2013 - 2017) <span class="dis-block"></span>- Jinan University (Guangzhou)</br>
+        <span class="text-bold">Experience:</span></br>Planner - AKQA Shanghai</br>Account Executive (Intern) - TBWA Shanghai</br>Copy & Designer (Intern) - Utop Shanghai</br>Retoucher - Veraho Production</br>New Media Journalist - Xinhua News Agency Guangzhou</br>Global Exchange - Volunteer In Indonesia (AIESEC)</br>
         </br>
-        <span class="text-bold">Experience:</span></br>Global Exchange - Volunteer In Indonesia (AIESEC)</br>New Media Journalist - Xinhua News Agency Guangzhou</br>Retoucher - Veraho Production</br>Copy & Designer (Intern) - Utop Shanghai</br>Account Executive (Intern) - TBWA Shanghai</br>Associate Planner - AKQA Shanghai</br>
+        <span class="text-bold">Education:</span></br>Advertising Bachelor Degree (2013 - 2017) <span class="dis-block"></span>- Jinan University (Guangzhou)</br>
         </br>
         <span class="text-bold">Contact Me:</span></br>Email: divagogogo@gmail.com</br>
         <a href="http://weibo.com/divago/home"><img class="info-icon" src="../assets/weibo.png"></a>
