@@ -448,7 +448,8 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        margin: 0 0 13px 5px;
+        margin: 0 0 13px 0;
+        text-align: left;
         user-select: text;
         cursor: default;
         padding-bottom: 2px;
