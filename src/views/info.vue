@@ -8,13 +8,15 @@
   .text-bold {
     font-family: FuturaBold;
   }
+  .container {
+    background-color: #191919;
+  }
   /*
   * 屏幕宽大于800px用以下css
   */
 
   @media screen and (min-width:800px) {
     .container {
-      background: #000;
       width: 100%;
       height: 92vh;
       position: relative;
@@ -64,7 +66,6 @@
 
   @media screen and (max-width:800px) {
     .container {
-      background: #000;
       width: 100%;
       height: 110vh;
     }
@@ -116,12 +117,12 @@
     <div class="box" v-once>
       <img class="info-img" src="http://go.divagao.com/Info.jpg">
       <div class="content">
-        <span class="text-name"><span class="text-bold">Diva.Gao</span> 高价硬</span></br>
+        <span class="text-name"><span class="text-bold">Diva.Go</span></span></br>
         <span class="text-type">PHOTOS / DESIGN / STRATEGY</span></br>
         </br>
         <span class="text-bold">Experience:</span></br>Planner - AKQA Shanghai</br>Account Executive (Intern) - TBWA Shanghai</br>Copy & Designer (Intern) - Utop Shanghai</br>Retoucher - Veraho Production</br>New Media Journalist - Xinhua News Agency Guangzhou</br>Global Exchange - Volunteer In Indonesia (AIESEC)</br>
         </br>
-        <span class="text-bold">Education:</span></br>Advertising Bachelor Degree (2013 - 2017) <span class="dis-block"></span>- Jinan University (Guangzhou)</br>
+        <span class="text-bold">Education:</span></br>Advertisement <span class="dis-block"></span>- Jinan University Guangzhou</br>
         </br>
         <span class="text-bold">Contact Me:</span></br>Email: divagogogo@gmail.com</br>
         <a href="http://weibo.com/divago/home"><img class="info-icon" src="../assets/weibo.png"></a>
