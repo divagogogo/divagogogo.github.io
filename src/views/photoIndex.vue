@@ -67,7 +67,7 @@
   }
 
   .description {
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     text-align: left;
     margin-bottom: 30px;
   }
@@ -84,12 +84,9 @@
     margin-bottom: 3rem;
   }
   .description {
-    width: 6%;
-    padding-right: 6%;
+    width: 20%;
+    padding-right: 4%;
     box-sizing: border-box;
-  }
-  .detail {
-    width: 60%;
   }
   .description > p {
     line-height: 30px;
