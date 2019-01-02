@@ -4,7 +4,20 @@
     vertical-align: top;
     margin: 0;
   }
+  .photoDetail {
+    display: flex;
+  }
+  .photoIndex {
+    width: 100%;
+    height: 92vh;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+    padding: 40px 3%;
+    box-sizing: border-box;
+  }
   .photoIndexH2 {
+    width: 100%;
     position: relative;
     text-transform: uppercase;
     height: 20px;
@@ -40,30 +53,43 @@
     text-align: left;
   }
   .next {
-    right: -1.2%;
+    right: 0%;
     text-align: right;
-
   }
   .grey {
     color: grey;
   }
-@media screen and (min-width:600px) {
-  .photoIndex {
+
+  .detail > img,
+  .detail > .video-wrap {
     width: 100%;
-    height: 92vh;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-    text-align: center;
-    padding: 40px 3%;
-    box-sizing: border-box;
+    margin: 0 auto 10px;
+  }
+
+  .description {
+    flex: 1 1 auto;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .detail {
+    flex: 1 1 auto;
+  }
+
+@media screen and (min-width:600px) {
+  .photoDetail {
+    flex-direction: row;
   }
   .photoIndex > div {
     font-size: 2rem;
     margin-bottom: 3rem;
   }
   .description {
-    text-align: left;
-    margin-bottom: 30px;
+    width: 6%;
+    padding-right: 6%;
+    box-sizing: border-box;
+  }
+  .detail {
+    width: 60%;
   }
   .description > p {
     line-height: 30px;
@@ -76,21 +102,10 @@
     font-size: 1.7rem !important;
     margin-bottom: 6px !important;
   }
-  .photoIndex > img,
-  .photoIndex > .video-wrap {
-    width: 100%;
-    margin: 0 auto 10px;
-  }
 }
 @media screen and (max-width:600px) {
-  .photoIndex {
-    width: 100%;
-    height: 92vh;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-    text-align: center;
-    padding: 40px 3%;
-    box-sizing: border-box;
+  .photoDetail {
+    flex-direction: column;
   }
   .description > p {
     line-height: 18px;
@@ -119,11 +134,6 @@
   .description-name {
     font-size: 1.3rem;
     margin-bottom: 6px !important;
-  }
-  .photoIndex > img,
-  .photoIndex > .video-wrap {
-    width: 100%;
-    margin: 0 auto 10px;
   }
 }
 .video-js {
@@ -157,35 +167,41 @@
       <div class="prev" :class="{ grey: noPrev }" @click="prevPage">prev -</div>
       <div class="next" :class="{ grey: noNext }" @click="nextPage">+ next</div>
     </div>
-    <div class="description" v-if="photoData.hasOwnProperty('description')">
-        <p class="description-name">{{photoData.description.name}}:</p>
-        <p class="description-value" v-show="showDesc" v-html="photoData.description.value"></p>
+    <div class="photoDetail">
+      <div class="description" v-if="photoData.hasOwnProperty('description')">
+          <p class="description-name">{{photoData.description.name}}:</p>
+          <p class="description-value" v-show="showDesc" v-html="photoData.description.value"></p>
+      </div>
+      <div class="detail">
+        <div v-if="photoData.hasOwnProperty('audio')">
+          <aplayer
+            autoplay
+            mutex
+            theme="#42b983"
+            preload="metadata"
+            mode="circulation"
+            :music="{
+              /*TODO: use audioPlayerOptions*/
+              //audioPlayerOptions
+              title: this.photoData.audioTitle,
+              author: this.photoData.audioAuthor,
+              url: this.photoData.audio,
+              pic: this.photoData.audioCover
+            }">
+          </aplayer>
+          <br>
+        </div>
+        <div class="video-wrap" v-if="photoData.hasOwnProperty('video')">
+            <video-player  ref="videoPlayer"
+                :options="playerOptions">
+            </video-player>
+        </div>
+        <img 
+          v-for="n in photoData.length"
+          v-bind:key="n"
+          v-lazy="'http://go.divagao.com/' + photoData.name + '/' + n + '.' + indexImgType">
+      </div>
     </div>
-    <div v-if="photoData.hasOwnProperty('audio')">
-      <aplayer
-        autoplay
-        mutex
-        theme="#42b983"
-        preload="metadata"
-        mode="circulation"
-        :music="{
-          /*TODO: use audioPlayerOptions*/
-          //audioPlayerOptions
-          title: this.photoData.audioTitle,
-          author: this.photoData.audioAuthor,
-          url: this.photoData.audio,
-          pic: this.photoData.audioCover
-        }">
-      </aplayer>
-      <br>
-    </div>
-    <div class="video-wrap" v-if="photoData.hasOwnProperty('video')">
-        <video-player  ref="videoPlayer"
-            :options="playerOptions">
-        </video-player>
-    </div>
-    <img v-for="n in photoData.length"
-      v-lazy="'http://go.divagao.com/' + photoData.name + '/' + n + '.' + indexImgType">
   </div>
 </template>
 
@@ -238,7 +254,7 @@ export default {
   methods: {
     handleScroll() {
       const scrollTop = this.$refs.photoIndex.scrollTop;
-      this.showDesc = scrollTop < this.lastScrollPos && scrollTop < 100;
+      this.showDesc = scrollTop < this.lastScrollPos && scrollTop < 300;
       this.lastScrollPos = scrollTop;
     },
     toList() {
