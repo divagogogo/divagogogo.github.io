@@ -40,7 +40,7 @@
     text-align: left;
   }
   .next {
-    right: 0;
+    right: -1.2%;
     text-align: right;
 
   }
@@ -54,7 +54,7 @@
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     text-align: center;
-    padding: 40px 22%;
+    padding: 40px 3%;
     box-sizing: border-box;
   }
   .photoIndex > div {
@@ -89,7 +89,7 @@
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     text-align: center;
-    padding: 20px 10% 80px;
+    padding: 40px 3%;
     box-sizing: border-box;
   }
   .description > p {
@@ -155,13 +155,11 @@
   <div class="photoIndex" ref="photoIndex">
     <div class="photoIndexH2">
       <div class="prev" :class="{ grey: noPrev }" @click="prevPage">prev -</div>
-      <span @click="toList">{{$route.params.name}}</span>
       <div class="next" :class="{ grey: noNext }" @click="nextPage">+ next</div>
-
     </div>
-    <div class="description" v-if="photoData.hasOwnProperty('description') && showDesc">
+    <div class="description" v-if="photoData.hasOwnProperty('description')">
         <p class="description-name">{{photoData.description.name}}:</p>
-        <p class="description-value" v-html="photoData.description.value"></p>
+        <p class="description-value" v-show="showDesc" v-html="photoData.description.value"></p>
     </div>
     <div v-if="photoData.hasOwnProperty('audio')">
       <aplayer

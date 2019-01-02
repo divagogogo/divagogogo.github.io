@@ -38,13 +38,13 @@
   .index {
     font-size: 1rem;
     position: absolute;
-    left: 3.7vw;
+    left: 3%;
   }
   .info {
     font-size: 1rem;
     position: absolute;
     /*top: 1%;*/
-    right: 3.7vw;
+    right: 3%;
   }
 </style>
 <template>
