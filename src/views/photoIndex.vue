@@ -152,14 +152,14 @@
 }
 </style>
 <template>
-  <div class="photoIndex">
+  <div class="photoIndex" ref="photoIndex">
     <div class="photoIndexH2">
       <div class="prev" :class="{ grey: noPrev }" @click="prevPage">prev -</div>
       <span @click="toList">{{$route.params.name}}</span>
       <div class="next" :class="{ grey: noNext }" @click="nextPage">+ next</div>
 
     </div>
-    <div class="description" v-if="photoData.hasOwnProperty('description')">
+    <div class="description" v-if="photoData.hasOwnProperty('description') && showDesc">
         <p class="description-name">{{photoData.description.name}}:</p>
         <p class="description-value" v-html="photoData.description.value"></p>
     </div>
@@ -203,7 +203,9 @@ export default {
   data() {
     return {
       noNext: false,
-      noPrev: false
+      noPrev: false,
+      showDesc: true,
+      lastScrollPos: 0
     }
   },
   created() {
@@ -225,7 +227,22 @@ export default {
       this.noNext = true;
     }
   },
+  mounted() {
+    if (window.innerWidth < 600) {
+      window.addEventListener('scroll', this.handleScroll, true);
+    }
+  },
+  destroyed() {
+    if (window.innerWidth < 600) {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
+  },
   methods: {
+    handleScroll() {
+      const scrollTop = this.$refs.photoIndex.scrollTop;
+      this.showDesc = scrollTop < this.lastScrollPos && scrollTop < 100;
+      this.lastScrollPos = scrollTop;
+    },
     toList() {
       BUS.$emit('showAlbum');
       BUS.$emit('routeChange', false);
