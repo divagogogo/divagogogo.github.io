@@ -3,9 +3,33 @@
     width: 100%;
     height: 92vh;
     overflow: hidden;
-    position: relative;
-    background-color: #141414;
+    background-color: #fff;
+    padding: 0 3%;
+    box-sizing: border-box;
   }
+
+  .main-img-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .main-img-wrap img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+  }
+  
+  .fade-enter-active {
+    transition: all .8s ease;
+  }
+  .fade-leave-active {
+    transition: all 1.5s ease;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+/*   
   .main-text-wrap {
     width: 100%;
     height: 100%;
@@ -101,13 +125,20 @@
       top: 50%;
       opacity: 1;
     }
-  }
+  } */
 
 </style>
 <template>
   <div>
     <div class="main">
-      <div class="main-bg" :class="{'main-op': showText}" @click="showText=!showText">
+      <div class="main-img-wrap">
+        <transition v-for="i in indexList" v-bind:key="i"  name="fade">
+          <img 
+            v-show="currentIndex === i"
+            v-lazy="`${imgText}${i}.jpg`">
+        </transition>
+      </div>
+      <!-- <div class="main-bg" :class="{'main-op': showText}" @click="showText=!showText">
       </div>
       <div class="main-text-wrap" :class="{'to-center': showText}" @click.stop.capture="showAlbum">
         <div class="main-text">
@@ -123,7 +154,7 @@
             <p>-ENTER</p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -131,7 +162,25 @@
 export default {
   data() {
     return {
-      showText: false
+      showText: false,
+      imgText: 'http://go.divagao.com/home',
+      currentIndex: 1,
+      indexList: [1, 2, 3],
+      intervalFn: null
+    }
+  },
+  beforeMount() {
+    this.intervalFn = setInterval(() => {
+      if (this.currentIndex <= 2) {
+        this.currentIndex += 1;
+      } else {
+        this.currentIndex = 1;
+      }
+    }, 3000);
+  },
+  beforeDestroy() {
+    if (this.intervalFn) {
+      clearInterval(this.intervalFn);
     }
   },
   methods: {
