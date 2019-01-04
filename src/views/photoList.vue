@@ -4,6 +4,13 @@
   height: 92vh;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
+  padding: 96px 3% 0;
+  display: flex;
+  box-sizing: border-box;
+}
+.description-value {
+  font-size: 14px;
+  font-family: FuturaBook;
 }
 .title {
   text-align: center;
@@ -14,17 +21,15 @@
   text-transform: uppercase;
 }
 .photo-boxes {
-  width: 100%;
-  box-sizing: border-box;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
 image[lazy=loading] {
-width: 20vw;
-height: 20vw;
-background-color: #fff;
-margin-bottom: 40px;
+  width: 20vw;
+  height: 20vw;
+  background-color: #fff;
+  margin-bottom: 40px;
 }
 .box a {
   cursor: pointer;
@@ -32,20 +37,31 @@ margin-bottom: 40px;
 .no-color {
   filter: grayscale(100%);
 }
+
+.description {
+  flex: 1 0 auto;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width:600px) {
+  .container {
+    flex-direction: row;
+  }
+  .description {
+    width: 20%;
+    padding-right: 4%;
+    box-sizing: border-box;
+  }
   .title h2 {
     font-size: 26px;
     margin-bottom: 3rem;
   }
-  .photo-boxes {
-    padding: 0 21vw;
-  }
   .box {
-    width: 18vw;
+    width: 32%;
   }
   .photos {
-    width: 18vw;
-    display: block;
+    width: 100%;
     opacity: 1;
     transition: opacity 1.2s;
   }
@@ -53,22 +69,33 @@ margin-bottom: 40px;
     opacity: 0.5;
   }
   .photos-wrap {
-    width: 18vw;
+    width: 100%;
     background-color: #eee;
     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.10);
     margin-bottom: 20px;
   }
-
+  .description > p {
+    line-height: 30px;
+    font-size: 1.4rem;
+  }
+  .description > .description-value {
+    line-height: 20px;
+  }
+  .description-name {
+    font-size: 1.7rem !important;
+    margin-bottom: 6px !important;
+  }
 }
 @media screen and (max-width:600px) {
+  .container {
+    flex-direction: column;
+    padding-top: 30px;
+  }
   .title h2 {
     font-size: 22px;
   }
-  .photo-boxes {
-    padding: 0 3.7vw;
-  }
   .box {
-    width: 28.4vw;
+    width: 31%;
   }
   .box > a {
     /*height: 0;*/
@@ -76,17 +103,25 @@ margin-bottom: 40px;
   }
   .photos {
     display: block;
-    width: 28.4vw;
+    width: 100%;
     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.10);
-    margin-bottom: 2.9vw;
+    margin-bottom: 10%;
+  }
+  .description-name {
+    font-size: 1.3rem;
+    margin-bottom: 6px !important;
   }
 }
 </style>
 <template>
 <div>
   <div class="container">
-    <div class="title">
-      <h2>{{routeName}}</h2>
+    <div class="description">
+      <p class="description-name">ORDER 序 . work of 2018</p>
+      <p class="description-value">
+        ORDER project is a new episode of my photo project. It is not about the what call youth culture, but the power of them, is what i wanna express. The project ORDER, is to discover the power of order around me. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.
+        Play with them, create with them, express with them. Their power of ORDER
+      </p>
     </div>
     <div class="photo-boxes">
       <div class="box">
@@ -105,7 +140,6 @@ margin-bottom: 40px;
         </div>
       </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br>
   </div>
 </div>
 </template>

@@ -41,7 +41,6 @@
   .description-value {
     font-size: 14px;
     font-family: FuturaBook;
-
   }
   .prev,
   .next {
@@ -166,8 +165,8 @@
     </div>
     <div class="photoDetail">
       <div class="description" v-if="photoData.hasOwnProperty('description')">
-          <p class="description-name">{{photoData.description.name}}:</p>
-          <p class="description-value" v-show="showDesc" v-html="photoData.description.value"></p>
+        <p class="description-name">{{photoData.description.name}}:</p>
+        <p class="description-value" v-show="showDesc" v-html="photoData.description.value"></p>
       </div>
       <div class="detail">
         <div v-if="photoData.hasOwnProperty('audio')">
