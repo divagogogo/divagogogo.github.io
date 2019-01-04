@@ -88,7 +88,6 @@ export default {
       if (this.$route.name === 'info') return;
       if (this.hide === false) {
         this.$router.push({name: 'info'});
-
       } else {
         BUS.$emit('routeChange', false);
         setTimeout(() => {

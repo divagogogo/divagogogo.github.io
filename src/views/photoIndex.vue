@@ -66,7 +66,7 @@
   }
 
   .description {
-    flex: 1 0 auto;
+    flex: 0 0 auto;
     text-align: left;
     margin-bottom: 30px;
   }
@@ -216,6 +216,11 @@ export default {
       noPrev: false,
       showDesc: true,
       lastScrollPos: 0
+    }
+  },
+  watch: {
+    photoData() {
+      this.$refs.photoIndex.scrollTop = 0;
     }
   },
   created() {
@@ -387,7 +392,6 @@ export default {
       }
     },
     indexImgType() {
-      console.log(this.photoData);
       return this.photoData.indexImgType ? this.photoData.indexImgType : 'jpg'
     }
   }

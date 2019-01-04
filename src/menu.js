@@ -3,16 +3,16 @@ export default {
     name: 'PHOTO',
     list: [{
       title: 'ORDER 序 . work of 2018',
-      to: 'photolist/order'
+      to: '/photolist/order'
     },{
       title: 'Just So . Still life',
       to: null
     },{
       title: 'Half Moon',
-      to: 'photoindex/photo/center/7'
+      to: '/photoindex/photo/center/7'
     },{
       title: '2017',
-      to: 'photolist/2017'
+      to: '/photolist/2017'
     }]
   },{
     name: 'BOOK',
@@ -27,22 +27,22 @@ export default {
       to: null
     },{
       title: 'Zen',
-      to: 'photolist/zen'
+      to: '/photolist/zen'
     },{
       title: 'Book of Stephen Yas',
       to: null
     },{
       title: 'VI. Cakenaire',
-      to: 'photoindex/art/left/0'
+      to: '/photoindex/art/left/0'
     },{
       title: 'VI. Socrate',
-      to: 'photoindex/art/center/4'
+      to: '/photoindex/art/center/4'
     },{
       title: 'VI. Blue Sense',
-      to: 'photoindex/art/center/6'
+      to: '/photoindex/art/center/6'
     },{
       title: 'Diva Collection',
-      to: 'photoindex/art/center/1'
+      to: '/photoindex/art/center/1'
     }]
   },{
     name: 'PROJECT',
@@ -54,13 +54,13 @@ export default {
       to: null
     },{
       title: 'Airbnb',
-      to: 'photoindex/project/center/0'
+      to: '/photoindex/project/center/0'
     },{
       title: 'Fendi BB',
-      to: 'photoindex/project/right/0'
+      to: '/photoindex/project/right/0'
     },{
       title: 'Oversea Love',
-      to: 'photoindex/project/right/1'
+      to: '/photoindex/project/right/1'
     }]
   }],
   list: {
@@ -79,20 +79,20 @@ export default {
         }],
         center: [{
           title: 'child circle',
-          to: 'photoindex/photo/right/0',
+          to: '/photoindex/photo/right/0',
           cover: 'http://go.divagao.com/LA-W1.jpg'
         },{
           title: 'mounting',
-          to: 'photoindex/photo/left/1',
+          to: '/photoindex/photo/left/1',
           cover: 'http://go.divagao.com/RA-V1.jpg'
         }],
         right: [{
           title: 'back to oval',
-          to: 'photoindex/photo/center/0',
+          to: '/photoindex/photo/center/0',
           cover: 'http://go.divagao.com/MA-R.jpg'
         },{
           title: 'island',
-          to: 'photoindex/photo/right/3',
+          to: '/photoindex/photo/right/3',
           cover: 'http://go.divagao.com/RA-X.jpg'
         }]
       }
@@ -103,33 +103,33 @@ export default {
       sublist: {
         left: [{
           title: 'RYB',
-          to: 'photoindex/photo/left/4',
+          to: '/photoindex/photo/left/4',
           cover: 'http://go.divagao.com/LA-Y.jpg'
         },{
           title: 'Abysmal',
-          to: 'photoindex/photo/center/6',
+          to: '/photoindex/photo/center/6',
           cover: 'http://go.divagao.com/MAA.jpg'
         }],
         center: [{
           title: 'Pinky cool',
-          to: 'photoindex/photo/left/7',
+          to: '/photoindex/photo/left/7',
           cover: 'http://go.divagao.com/LB.jpg'
         },{
           title: 'B&W',
-          to: 'photoindex/photo/center/4',
+          to: '/photoindex/photo/center/4',
           cover: 'http://go.divagao.com/MA-Y.jpg'
         },{
           title: 'no name',
-          to: 'photoindex/photo/right/6',
+          to: '/photoindex/photo/right/6',
           cover: 'http://go.divagao.com/RA.jpg'
         }],
         right: [{
           title: 'play',
-          to: 'photoindex/photo/center/2',
+          to: '/photoindex/photo/center/2',
           cover: 'http://go.divagao.com/MA-V1.jpg'
         },{
           title: 'Tension',
-          to: 'photoindex/photo/right/5',
+          to: '/photoindex/photo/right/5',
           cover: 'http://go.divagao.com/RA-Z.jpg'
         }]
       }
@@ -140,49 +140,49 @@ export default {
       sublist: {
         left: [{
           title: 'Wave',
-          to: 'photoindex/art/left/3',
+          to: '/photoindex/art/left/3',
           cover: 'http://go.divagao.com/ALA-W.jpg'
         },{
           title: '川',
-          to: 'photoindex/art/left/5',
+          to: '/photoindex/art/left/5',
           cover: 'http://go.divagao.com/ALA-Y.jpg'
         },{
           title: '山活',
-          to: 'photoindex/art/center/3',
+          to: '/photoindex/art/center/3',
           cover: 'http://go.divagao.com/AMA-X.jpg'
         },{
           title: '萬里',
-          to: 'photoindex/art/right/0',
+          to: '/photoindex/art/right/0',
           cover: 'http://go.divagao.com/ARA-X.jpg'
         }],
         center: [{
           title: '潮',
-          to: 'photoindex/art/left/1',
+          to: '/photoindex/art/left/1',
           cover: 'http://go.divagao.com/ALA-V.jpg'
         },{
           title: '一目了然',
-          to: 'photoindex/art/center/2',
+          to: '/photoindex/art/center/2',
           cover: 'http://go.divagao.com/AMA-U.jpg'
         },{
           title: '根',
-          to: 'photoindex/art/center/5',
+          to: '/photoindex/art/center/5',
           cover: 'http://go.divagao.com/AMA-Y.jpg'
         },{
           title: '淨土',
-          to: 'photoindex/art/right/3',
+          to: '/photoindex/art/right/3',
           cover: 'http://go.divagao.com/ARA-Y.jpg'
         }],
         right: [{
           title: '空門',
-          to: 'photoindex/art/left/2',
+          to: '/photoindex/art/left/2',
           cover: 'http://go.divagao.com/ALA-X.jpg'
         },{
           title: '川流',
-          to: 'photoindex/art/center/0',
+          to: '/photoindex/art/center/0',
           cover: 'http://go.divagao.com/AMA-V.jpg'
         },{
           title: '互',
-          to: 'photoindex/art/right/5',
+          to: '/photoindex/art/right/5',
           cover: 'http://go.divagao.com/ARA-W.jpg'
         }]
       }
