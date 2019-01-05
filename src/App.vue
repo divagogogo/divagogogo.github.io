@@ -20,6 +20,9 @@ html,body {
   height: 100%;
   width: 100%;
 }
+::-webkit-scrollbar { 
+  display: none; 
+}
 #app {
   width: 100%;
   height: 100%;
