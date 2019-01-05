@@ -52,7 +52,7 @@
   </div>
 </template>
 <script type="text/javascript">
-import menuData from '../menu.js';
+import { menu } from '../menu.js';
 
 export default {
   props: ['hide', 'routenochange'],
@@ -69,7 +69,7 @@ export default {
   },
   computed: {
     menu() {
-      return menuData.menu;
+      return menu;
     }
   }
 }

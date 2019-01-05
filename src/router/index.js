@@ -18,18 +18,8 @@ export default new Router({
       }
     }, 
     {
-      path: '/photo',
+      path: '/photolist/:name',
       name: 'photo',
-      component: photoList
-    }, 
-    {
-      path: '/art',
-      name: 'art',
-      component: photoList
-    }, 
-    {
-      path: '/project',
-      name: 'project',
       component: photoList
     }, 
     {

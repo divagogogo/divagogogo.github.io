@@ -39,7 +39,7 @@ image[lazy=loading] {
 }
 
 .description {
-  flex: 1 0 auto;
+  flex: 0 0 auto;
   text-align: left;
   margin-bottom: 30px;
 }
@@ -117,26 +117,23 @@ image[lazy=loading] {
 <div>
   <div class="container">
     <div class="description">
-      <p class="description-name">ORDER 序 . work of 2018</p>
-      <p class="description-value">
-        ORDER project is a new episode of my photo project. It is not about the what call youth culture, but the power of them, is what i wanna express. The project ORDER, is to discover the power of order around me. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.
-        Play with them, create with them, express with them. Their power of ORDER
-      </p>
+      <p class="description-name">{{photoData.title}}</p>
+      <p class="description-value" v-html="photoData.desc"></p>
     </div>
     <div class="photo-boxes">
       <div class="box">
-        <div class="photos-wrap" :class="{'no-color': routeName !== 'photo'}" v-for="(item, index) in photoData.left" @click="toIndex('left', index)">
-          <img class="photos" v-lazy="'http://go.divagao.com/' + item.name + '.jpg'">
+        <div class="photos-wrap" v-for="(item, index) in photoData.sublist.left" v-bind:key="index" @click="toIndex(item.to)">
+          <img class="photos" v-lazy="item.cover" :alt="item.title">
         </div>
       </div>
       <div class="box">
-        <div class="photos-wrap" :class="{'no-color': routeName !== 'photo'}" v-for="(item, index) in photoData.center" @click="toIndex('center', index)">
-          <img class="photos" v-lazy="'http://go.divagao.com/' + item.name + '.jpg'">
+        <div class="photos-wrap" v-for="(item, index) in photoData.sublist.center" v-bind:key="index" @click="toIndex(item.to)">
+          <img class="photos" v-lazy="item.cover" :alt="item.title">
         </div>
       </div>
       <div class="box">
-        <div class="photos-wrap" :class="{'no-color': routeName !== 'photo'}" v-for="(item, index) in photoData.right" @click="toIndex('right', index)">
-          <img class="photos" v-lazy="'http://go.divagao.com/' + item.name + '.jpg'">
+        <div class="photos-wrap" v-for="(item, index) in photoData.sublist.right" v-bind:key="index" @click="toIndex(item.to)">
+          <img class="photos" v-lazy="item.cover" :alt="item.title">
         </div>
       </div>
     </div>
@@ -144,7 +141,7 @@ image[lazy=loading] {
 </div>
 </template>
 <script type="text/javascript">
-import photos from '../photos.js';
+import { list } from '../menu.js';
 export default {
   data() {
     return {
@@ -152,20 +149,17 @@ export default {
   },
   props: ['hide'],
   computed: {
-    routeName() {
-      return this.$route.name;
-    },
     photoData() {
-      return photos[this.$route.name];
+      return list[this.$route.params.name];
     },
   },
   methods: {
-    toIndex(position, index) {
+    toIndex(url) {
       BUS.$emit('routeChange', false);
       BUS.$emit('showAlbum');
       setTimeout(() => {
         BUS.$emit('routeChange', true);
-        this.$router.push({name: 'photoindex', params: {name: this.routeName, position: position,n: index}});
+        this.$router.push(url);
         BUS.$emit('showAlbum');
       }, 1000);    
     },
