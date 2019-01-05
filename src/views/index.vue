@@ -19,6 +19,20 @@
     top: 50%;
     transform: translate3d(0, -50%, 0);
   }
+
+  @media screen and (max-width:600px) {
+    .main-img-wrap {
+      height: 96%;
+      top: 50%;
+      transform: translateY(-50%);
+      overflow: hidden;
+    }
+    .main-img-wrap img {
+      width: auto;
+      height: 100%;
+      transform: translate3d(-40%, -50%, 0);
+    }
+  }
   
   .fade-enter-active {
     transition: all .8s ease;
