@@ -1,7 +1,7 @@
 export const menu = [{
   name: 'PHOTO',
   list: [{
-    title: 'ORDER 序 . work of 2018',
+    title: 'ORDER 序',
     to: '/photolist/order'
   }, {
     title: 'Just So . Still life',
@@ -66,8 +66,8 @@ export const menu = [{
 
 export const list = {
   order: {
-    title: 'ORDER 序 . work of 2018',
-    desc: 'ORDER project is a new episode of my photo project. It is not about the what call youth culture, but the power of them, is what i wanna express. The project ORDER, is to discover the power of order around me. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.</br>Play with them, create with them, express with them. Their power of ORDER',
+    title: 'ORDER 序',
+    desc: 'ORDER project is a new episode of my photo project in 2018. It is not about the what call youth culture, but the power of them, is what i wanna express. The project ORDER, is to discover the power of order around me. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.</br>Play with them, create with them, express with them. Their power of ORDER',
     sublist: {
       left: [{
         title: 'home or mall',
