@@ -61,9 +61,9 @@ export default {
       if (url === null) return false;
       BUS.$emit('routeChange', false);
       BUS.$emit('showAlbum');
+      this.$router.push(url);
       setTimeout(() => {
         BUS.$emit('routeChange', true);
-        this.$router.push(url);
       }, 1000); 
     }
   },
