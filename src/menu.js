@@ -1,6 +1,7 @@
 export const menu = [{
   name: 'PHOTO',
-  list: [{
+  list: [
+{
     title: 'ORDER 序',
     to: '/photolist/order'
   }, {
@@ -12,56 +13,76 @@ export const menu = [{
   }, {
     title: '2017',
     to: '/photolist/2017'
-  }]
-}, {
+  },
+],
+}, 
+{
   name: 'BOOK',
   list: [{
     title: 'Just so 如此',
     to: null
-  }]
-}, {
+  },
+],
+}, 
+{
   name: 'ART',
-  list: [{
+  list: [
+ {
     title: 'Five Elements',
     to: null
-  }, {
+  },
+ {
     title: 'Zen',
     to: '/photolist/zen'
-  }, {
+  },
+ {
     title: 'Book of Stephen Yas',
     to: null
-  }, {
+  },
+ {
     title: 'VI. Cakenaire',
     to: '/photoindex/art/left/0'
-  }, {
+  },
+ {
     title: 'VI. Socrate',
     to: '/photoindex/art/center/4'
-  }, {
+  },
+ {
     title: 'VI. Blue Sense',
     to: '/photoindex/art/center/6'
-  }, {
+  },
+ {
     title: 'Diva Collection',
     to: '/photoindex/art/center/1'
-  }]
-}, {
+  },
+],
+},
+ {
   name: 'PROJECT',
-  list: [{
+  list: [
+ {
     title: 'Evian',
     to: null
-  }, {
+  },
+ {
     title: 'Gore-Tex',
     to: null
-  }, {
+  },
+ {
     title: 'Airbnb',
     to: '/photoindex/project/center/0'
-  }, {
+  },
+ {
     title: 'Fendi BB',
     to: '/photoindex/project/right/0'
-  }, {
+  },
+ {
     title: 'Oversea Love',
     to: '/photoindex/project/right/1'
-  }]
-}];
+  },
+],
+},
+];
 
 
 export const list = {
@@ -148,9 +169,9 @@ export const list = {
             name: "Island",
             value: "Never wanna burst into my pure land.</br>MODEL: ZM</br>SHOOTING IN SHANGHAI",
           }, 
-        }
-      ]
-    }
+        },
+      ],
+    },
   },
   2017: {
     title: '2017',
@@ -238,8 +259,8 @@ export const list = {
           value: "SHOOTING IN SPAIN",
         }, 
       },  
-      ]
-    }
+      ],
+    },
   },
   zen: {
     title: 'Zen',
@@ -274,7 +295,7 @@ export const list = {
           name: "ZEN - Wave",
         },
       },
-      ]
+      ],
       center: [
       {
         name: "AMA-U",
@@ -298,7 +319,7 @@ export const list = {
           name: "ZEN - 根",
         },
       },
-      ]
+      ],
       right: [
       {
         name: "ARA-W",
@@ -321,7 +342,7 @@ export const list = {
           name: "ZEN - 淨土",
         },
       },
-      ]
-    }
-  }
+      ],
+    },
+  },
 };
