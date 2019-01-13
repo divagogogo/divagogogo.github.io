@@ -222,7 +222,7 @@ export default {
     photoData() {
       if(this.$refs.photoIndex) {
         this.$refs.photoIndex.scrollTop = 0;
-      } 
+      }
     }
   },
   created() {
@@ -256,6 +256,7 @@ export default {
   },
   methods: {
     handleScroll() {
+      if(!this.$refs.photoIndex) return;
       const scrollTop = this.$refs.photoIndex.scrollTop;
       this.showDesc = scrollTop < this.lastScrollPos && scrollTop < 300;
       this.lastScrollPos = scrollTop;
