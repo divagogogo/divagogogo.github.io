@@ -220,7 +220,9 @@ export default {
   },
   watch: {
     photoData() {
-      this.$refs.photoIndex.scrollTop = 0;
+      if(this.$refs.photoIndex) {
+        this.$refs.photoIndex.scrollTop = 0;
+      } 
     }
   },
   created() {
