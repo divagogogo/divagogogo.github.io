@@ -122,18 +122,18 @@ image[lazy=loading] {
     </div>
     <div class="photo-boxes">
       <div class="box">
-        <div class="photos-wrap" v-for="(item, index) in photoData.sublist.left" v-bind:key="index" @click="toIndex(item.to)">
-          <img class="photos" v-lazy="item.cover" :alt="item.title">
+        <div class="photos-wrap" v-for="(item, index) in photoData.sublist.left" v-bind:key="index" @click="toIndex('left', index)">
+          <img class="photos" v-lazy="genImgUrl(item.name)">
         </div>
       </div>
       <div class="box">
-        <div class="photos-wrap" v-for="(item, index) in photoData.sublist.center" v-bind:key="index" @click="toIndex(item.to)">
-          <img class="photos" v-lazy="item.cover" :alt="item.title">
+        <div class="photos-wrap" v-for="(item, index) in photoData.sublist.center" v-bind:key="index" @click="toIndex('center', index)">
+          <img class="photos" v-lazy="genImgUrl(item.name)">
         </div>
       </div>
       <div class="box">
-        <div class="photos-wrap" v-for="(item, index) in photoData.sublist.right" v-bind:key="index" @click="toIndex(item.to)">
-          <img class="photos" v-lazy="item.cover" :alt="item.title">
+        <div class="photos-wrap" v-for="(item, index) in photoData.sublist.right" v-bind:key="index" @click="toIndex('right', index)">
+          <img class="photos" v-lazy="genImgUrl(item.name)">
         </div>
       </div>
     </div>
@@ -154,15 +154,18 @@ export default {
     },
   },
   methods: {
-    toIndex(url) {
+    toIndex(position, index) {
       BUS.$emit('routeChange', false);
       BUS.$emit('showAlbum');
       setTimeout(() => {
         BUS.$emit('routeChange', true);
-        this.$router.push(url);
+        this.$router.push({name: 'photoindex', params: {name: this.$route.params.name, position: position,n: index}});
         BUS.$emit('showAlbum');
       }, 1000);    
     },
+    genImgUrl(name) {
+      return `http://go.divagao.com/${name}.jpg`
+    }
   }
 }
 </script>

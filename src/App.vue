@@ -109,8 +109,8 @@ export default {
     BUS.$on('showAlbum',() => {
       this.hide = !this.hide;
     });
-    BUS.$on('routeChange', (data) => {
-      this.routenochange = data;
+    BUS.$on('routeChange', (isRouteChange) => {
+      this.routenochange = isRouteChange;
     })
   },
   components: {

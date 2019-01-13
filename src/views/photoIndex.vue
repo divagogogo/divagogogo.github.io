@@ -194,7 +194,7 @@
         </div>
         <img 
           v-for="n in photoData.length"
-          v-bind:key="n"
+          :key="`${photoData.name}-${n}`"
           v-lazy="'http://go.divagao.com/' + photoData.name + '/' + n + '.' + indexImgType">
       </div>
     </div>
@@ -202,7 +202,7 @@
 </template>
 
 <script type="text/javascript">
-import photos from '../photos.js';
+import {list} from '../menu.js';
 import Aplayer from '../components/vue-aplayer.vue'
 import { videoPlayer } from 'vue-video-player'
 export default {
@@ -225,9 +225,9 @@ export default {
   },
   created() {
     const { params } = this.$route;
-    const centerLength = photos[params.name].center.length;
-    const leftLength = photos[params.name].left.length;
-    const rightLength = photos[params.name].right.length;
+    const centerLength = list[params.name].sublist.center && list[params.name].sublist.center.length;
+    const leftLength = list[params.name].sublist.left && list[params.name].sublist.left.length;
+    const rightLength = list[params.name].sublist.right && list[params.name].sublist.right.length;
 
     if (this.$route.params.n === '0' && this.$route.params.position === 'left') {
       this.noPrev = true;
@@ -314,7 +314,7 @@ export default {
       const { name, params} = this.$route;
       switch (params.position) {
         case 'left':
-          const centerLength = photos[params.name].center.length;
+          const centerLength = list[params.name].sublist.center.length;
           if (params.n > centerLength - 1) {
             this.noNext = true;
             return false;
@@ -330,7 +330,7 @@ export default {
           }
           break;
         case 'center':
-          const rightLength = photos[params.name].right.length;
+          const rightLength = list[params.name].sublist.right.length;
           if (params.n > rightLength - 1) {
             this.noNext = true;
             return false;
@@ -346,7 +346,7 @@ export default {
           }
           break;
         case 'right':
-          const leftLength = photos[params.name].left.length;
+          const leftLength = list[params.name].sublist.left.length;
           if (params.n >= leftLength - 1) {
             this.noNext = true;
             return false;
@@ -367,7 +367,7 @@ export default {
   computed: {
     photoData() {
       let routeParams = this.$route.params;
-      return photos[routeParams.name][routeParams.position][routeParams.n];
+      return list[routeParams.name].sublist[routeParams.position][routeParams.n];
     },
     audioPlayerOptions() {
       /*TODO: use audioPlayerOptions*/
