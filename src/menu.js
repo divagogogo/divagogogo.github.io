@@ -5,10 +5,10 @@ export const menu = [{
     to: '/photolist/order'
   }, {
     title: 'Just So . Still life',
-    to: null
+    to: '/photolist/stilllife'
   }, {
     title: 'Half Moon',
-    to: '/photoindex/photo/center/7'
+    to: '/photolist/photo/center/7'
   }, {
     title: '2017',
     to: '/photolist/2017'
@@ -90,20 +90,6 @@ export const list = {
             value: "\"That is a truer world\"</br>Struggling. From home to the big city. From moist, puzzled, to sleepy and contrived. This is not myself.</br>Though attach to the past, I will still move forward. Regardless of the consequences. Until find the real me</br></br></br>MODEL: FREDDIE</br>SHOOTING IN RONDA,SPAIN",
           }, 
         },
-        {
-          name: "LA-V",
-          length: 9,
-          description: {
-            name: "City - HK",
-          },        
-        },
-        {
-          name: "LA-X",
-          length: 9,
-          description: {
-            name: "Green Light - Hangzhou",
-          },        
-        },
       ],
       center: [
         {
@@ -130,14 +116,6 @@ export const list = {
             value: "MODEL: RRR</br>SHOOTING IN SHANGHAI",
           }, 
         },
-        {
-          name: "MA-R",
-          length: 9,
-          description: {
-            name: "ORDER - BACK TO OVAL",
-            value: "Recharge from the safety of oval</br></br></br>MODEL: LEVU</br>SHOOTING IN SH",
-          }, 
-        }
       ],
       right: [
         {
@@ -181,11 +159,169 @@ export const list = {
       left: []
     }
   },
+  stilllife: {
+    title: 'Just So . Still life',
+    desc: 'Just So . Still life',
+    sublist: {
+      left: [
+        {
+          name: "LA-V",
+          length: 9,
+          description: {
+            name: "City - HK",
+          },        
+        },
+        {
+          name: "LA-X",
+          length: 9,
+          description: {
+            name: "Green Light - Hangzhou",
+          },        
+        },
+        {
+        name: "RC",
+        length: 6,
+        },
+        {
+        name: "RG",
+        length: 9,
+        },
+      ],
+      center: [
+        {
+        name: "MA-T",
+        length: 9,
+        description: {
+          name: "City - MACAU",
+        },
+      }, 
+     {
+        name: "MA-X",
+        length: 10,
+        description: {
+          name: "White White Singapore",
+        }, 
+      },
+      {
+        name: "RA-Y",
+        length: 9,
+      },
+      {
+        name: "RA-Z",
+        length: 9,
+        description: {
+          name: "Tension",
+          value: "MODEL: MING</br>SHOOTING IN SHANGHAI",
+        },
+      }, 
+      ],
+      right: [
+      {
+        name: "MA-U",
+        length: 9,
+        description: {
+          name: "Fall",
+        },
+      },
+      {
+        name: "MA-Z",
+        length: 9,
+        description: {
+          name: "Langkawi - Malaysia",
+        }, 
+      },
+      {
+        name: "RA-W",
+        length: 12,
+        description: {
+          name: "Crossing",
+          value: "SHOOTING IN SPAIN",
+        }, 
+      },  
+      ]
+    }
+  },
   zen: {
     title: 'Zen',
     desc: 'ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by Photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature.',
     sublist: {
-      left: []
+      left: [
+      {
+        name: "AMA-V",
+        length: 1,
+        description: {
+          name: "ZEN - 川流",
+        },
+      },
+      {
+        name: "ALA-V",
+        length: 1,
+        description: {
+          name: "ZEN - 潮",
+        },
+      },
+      {
+        name: "ALA-X",
+        length: 1,
+        description: {
+          name: "ZEN - 空門",
+        },
+      },
+      {
+        name: "ALA-W",
+        length: 1,
+        description: {
+          name: "ZEN - Wave",
+        },
+      },
+      ]
+      center: [
+      {
+        name: "AMA-U",
+        length: 1,
+        indexImgType: "gif",
+        description: {
+          name: "ZEN - 一目了然",
+        },
+      },
+      {
+        name: "AMA-X",
+        length: 1,
+        description: {
+          name: "ZEN - 山活",
+        },
+      },
+      {
+        name: "AMA-Y",
+        length: 1,
+        description: {
+          name: "ZEN - 根",
+        },
+      },
+      ]
+      right: [
+      {
+        name: "ARA-W",
+        length: 1,
+        description: {
+          name: "ZEN - 互",
+        },
+      },
+      {
+        name: "ARA-X",
+        length: 1,
+        description: {
+          name: "ZEN - 萬里",
+        },
+      },
+      {
+        name: "ARA-Y",
+        length: 1,
+        description: {
+          name: "ZEN - 淨土",
+        },
+      },
+      ]
     }
   }
 };
