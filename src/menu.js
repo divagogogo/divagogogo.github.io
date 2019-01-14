@@ -148,21 +148,6 @@ export const list = {
           },  
         },
         {
-          name: "MA-U",
-          length: 9,
-          description: {
-            name: "Fall",
-          }, 
-        },
-        {
-          name: "RA-W",
-          length: 12,
-          description: {
-            name: "Crossing",
-            value: "SHOOTING IN SPAIN",
-          }, 
-        },
-        {
           name: "RA-X",
           length: 9,
           description: {
@@ -177,12 +162,65 @@ export const list = {
     title: '2017',
     desc: 'Diva‘s work of 2017',
     sublist: {
-      left: []
-    }
+      left: [
+      {
+        name: "MAA",
+        length: 9,
+        description: {
+          name: "Abysmal",
+          value: "MODEL: DAYUAN</br>SHOOTING IN SHANGHAI",
+        }, 
+      },
+      {
+        name: "LA",
+        length: 13,
+        description: {
+          name: "Dark side",
+          value: "MODEL: MARINA</br>SHOOTING IN SHANGHAI",
+        }, 
+      },
+      ],
+      center: [
+      {
+        name: "RA-Z",
+        length: 9,
+        description: {
+          name: "Tension",
+          value: "MODEL: MING</br>SHOOTING IN SHANGHAI",
+        },
+      },
+      {
+        name: "LB",
+        length: 9,
+        description: {
+          name: "Pinky Cool",
+          value: "MODEL: YANA</br>SHOOTING IN SHANGHAI",
+        }, 
+      },
+      ],
+      right: [
+      {
+        name: "RA",
+        length: 9,
+        description: {
+          name: "No",
+          value: "MODEL: KUI</br>SHOOTING IN MACAO",
+        },
+      },
+      {
+        name: "LA-Y",
+        length: 9,
+        description: {
+          name: "RYB",
+          value: "MODEL: ATSUKI</br>SHOOTING IN JAPAN",
+        },  
+      },
+      ],
+    },
   },
   stilllife: {
     title: 'Just So . Still life',
-    desc: 'Just So . Still life',
+    desc: 'still life from all over the world.',
     sublist: {
       left: [
         {
@@ -227,14 +265,6 @@ export const list = {
         name: "RA-Y",
         length: 9,
       },
-      {
-        name: "RA-Z",
-        length: 9,
-        description: {
-          name: "Tension",
-          value: "MODEL: MING</br>SHOOTING IN SHANGHAI",
-        },
-      }, 
       ],
       right: [
       {
