@@ -1,25 +1,35 @@
-export const menu = [{
-  name: 'PHOTO',
-  list: [
+export const menu = [
 {
+  name: 'PHOTO',
+  list: 
+ [
+  {
     title: 'ORDER 序',
     to: '/photolist/order'
-  }, {
+  }, 
+  {
     title: 'Just So . Still life',
     to: '/photolist/stilllife'
-  }, {
+  }, 
+  {
     title: 'Half Moon',
-    to: '/photolist/photo/center/7'
-  }, {
+    to: '/photoindex/nomal/left/0'
+  }, 
+  {
     title: '2017',
     to: '/photolist/2017'
   },
-],
+ ],
 }, 
 {
   name: 'BOOK',
-  list: [{
+  list: [
+ {
     title: 'Just so 如此',
+    to: '/photoindex/nomal/left/1'
+  },
+ {
+    title: 'Book of Stephen Yas',
     to: null
   },
 ],
@@ -34,10 +44,6 @@ export const menu = [{
  {
     title: 'Zen',
     to: '/photolist/zen'
-  },
- {
-    title: 'Book of Stephen Yas',
-    to: null
   },
  {
     title: 'VI. Cakenaire',
@@ -70,15 +76,15 @@ export const menu = [{
   },
  {
     title: 'Airbnb',
-    to: '/photoindex/project/center/0'
+    to: '/photoindex/nomal/left/2'
   },
  {
     title: 'Fendi BB',
-    to: '/photoindex/project/right/0'
+    to: '/photoindex/nomal/left/3'
   },
  {
     title: 'Oversea Love',
-    to: '/photoindex/project/right/1'
+    to: '/photoindex/nomal/left/4'
   },
 ],
 },
@@ -91,6 +97,16 @@ export const list = {
     desc: 'ORDER project is a new episode of my photo project in 2018. It is not about the what call youth culture, but the power of them, is what i wanna express. The project ORDER, is to discover the power of order around me. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.</br>Play with them, create with them, express with them. Their power of ORDER',
     sublist: {
       left: [
+        {
+          name: "PRL1",
+          length: 9,
+          description: {
+          video: "http://go.divagao.com/PRL1:DUER.mp4",
+          videoCover: "http://go.divagao.com/PRL1:DUER.jpg",
+            name: "ORDER - DUER",
+            value: "SHINE...</br></br></br>MODEL: CASSIE</br>GARMENT & STYLIST: ALICE CHAN</br>SHOOTING IN CANTON",
+          }, 
+        },
         {
           name: "LA-U",
           length: 9,
@@ -113,6 +129,14 @@ export const list = {
         },
       ],
       center: [
+        {
+          name: "PRM1",
+          length: 7,
+          description: {
+            name: "ORDER - FUSION",
+            value: "...</br></br></br>MODEL: SATORI</br>GARMENT & STYLIST: YANA LEE</br>SHOOTING IN SHANGHAI",
+          }, 
+        },
         {
           name: "MA-R",
           length: 9,
@@ -139,6 +163,14 @@ export const list = {
         },
       ],
       right: [
+        {
+          name: "PRR1",
+          length: 9,
+          description: {
+            name: "ORDER - NONE",
+            value: "...</br></br></br>MODEL: CHENGZ</br>GARMENT & STYLIST: DIVAGO</br>SHOOTING IN SHANGHAI",
+          }, 
+        },
         {
           name: "LA-W1",
           length: 9,
@@ -370,6 +402,60 @@ export const list = {
         length: 1,
         description: {
           name: "ZEN - 淨土",
+        },
+      },
+      ],
+    },
+  },
+  normal: {
+    sublist: {
+      left: [
+      {
+        name: "MB",
+        length: 8,
+        description: {
+          name: "Half Moon",
+          value: "MODEL: JC</br>SHOOTING IN ZHUHAI",
+        }, 
+      },
+      {
+        name: "BOOK1",
+        length: 10,
+        description: {
+          name: "JUST SO 如此",
+          value: "My book is at SAMON, Wuxi</br>Imageless Dummy Photo-Zine Award 2018</br>Held by Imageless Studio</br>Just So is a still life photo book made by Divago, including the works in the past 3 years. ",
+        }, 
+      },
+      {
+        name: "PLA-Z",
+        length: 5,
+        video: "http://go.divagao.com/PLA-Z%2060S.mp4",
+        videoCover: "http://go.divagao.com/60s.jpg",
+        description: {
+          name: "Airbnb. Welcome Love",
+          value: "Airbnb's global mission \"Belong Anywhere\" doesn't translate well to Chinese. The brand needed a new name and strategy to connect with China's millennial travellers, a community of 384 million and growing, bigger than the entire US population.For the rebrand of Airbnb in China – Ai Bi Ying which means \"Welcome Each Other With Love\", AKQA Shanghai created an integrated campaign showing how travel opens us to a new world of love. All we have to do is welcome it.Through an anthem film, OOH and digital comms, we featured the unique homes, friendly hosts, vibrant neighbuorhoods, and unforgettable experiences you can book with Airbnb.</br>ROLE: PLANNER "
+        },
+      },
+      {
+        name: "PRA-Z",
+        length: 1,
+        indexImgType: "gif",
+        video: "http://go.divagao.com/PRA-Z.mp4",
+        videoCover: "http://go.divagao.com/PRA-Z%20COVER.jpg",
+        description: {
+          name: "FENDI BB Family Social Campaign",
+          value: "FENDI is a famous luxury brand. They wanted to launch the BB Family(the bag hanging drops series) in China through social platforms. After analyzing FENDI’s performance on social media, and finding out the FENDI girls characteristic, their lifestyle and their definition of fashion. To see how to communicate with them on social platform with a different tonality. </br>ROLE: PLANNER "
+        } 
+      },
+      {
+        name: "PRA",
+        length: 8,
+        indexImgType: "png",
+        video: "http://go.divagao.com/PRA%20S.mp4",
+        videoCover: "http://go.divagao.com/PRA/3.png",
+        description: {
+          name: "Love from Overseas Chinese",
+          value: "This is a prevue of the documentary about how people's life change after the government gave the movable TVs in the Tibetan Areas of Sichuan and Yunnan. We spent two months in the Tibetan areas to collect materials for this documentary.</br>ROLE: FILM & CUTTER"
         },
       },
       ],
