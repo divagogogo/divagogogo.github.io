@@ -8,12 +8,12 @@ export const menu = [
     to: '/photolist/order'
   }, 
   {
-    title: 'Just So . Still life',
+    title: 'Still life',
     to: '/photolist/stilllife'
   }, 
   {
     title: 'Half Moon',
-    to: '/photoindex/nomal/left/0'
+    to: '/photolist/nomal/left/0'
   }, 
   {
     title: '2017',
@@ -26,7 +26,7 @@ export const menu = [
   list: [
  {
     title: 'Just so 如此',
-    to: '/photoindex/nomal/left/1'
+    to: '/photolist/nomal/left/1'
   },
  {
     title: 'Book of Stephen Yas',
@@ -47,19 +47,19 @@ export const menu = [
   },
  {
     title: 'VI. Cakenaire',
-    to: '/photoindex/art/left/0'
+    to: '/photolist/nomal/right/0'
   },
  {
     title: 'VI. Socrate',
-    to: '/photoindex/art/center/4'
+    to: '/photolist/nomal/right/1'
   },
  {
     title: 'VI. Blue Sense',
-    to: '/photoindex/art/center/6'
+    to: '/photolist/nomal/right/2'
   },
  {
     title: 'Diva Collection',
-    to: '/photoindex/art/center/1'
+    to: '/photolist/nomal/right/3'
   },
 ],
 },
@@ -76,15 +76,15 @@ export const menu = [
   },
  {
     title: 'Airbnb',
-    to: '/photoindex/nomal/left/2'
+    to: '/photolist/nomal/left/2'
   },
  {
     title: 'Fendi BB',
-    to: '/photoindex/nomal/left/3'
+    to: '/photolist/nomal/left/3'
   },
  {
     title: 'Oversea Love',
-    to: '/photoindex/nomal/left/4'
+    to: '/photolist/nomal/left/4'
   },
 ],
 },
@@ -251,7 +251,7 @@ export const list = {
     },
   },
   stilllife: {
-    title: 'Just So . Still life',
+    title: 'Still life',
     desc: 'still life from all over the world.',
     sublist: {
       left: [
@@ -456,6 +456,37 @@ export const list = {
         description: {
           name: "Love from Overseas Chinese",
           value: "This is a prevue of the documentary about how people's life change after the government gave the movable TVs in the Tibetan Areas of Sichuan and Yunnan. We spent two months in the Tibetan areas to collect materials for this documentary.</br>ROLE: FILM & CUTTER"
+        },
+      },
+      ],
+      right: [
+      {
+        name: "ALA-Z1",
+        length: 6,
+        description: {
+          name: "CAKENAIRE VI & LOGO - Beijing (TBC)",
+          value: "CAKENAIRE is a dessert shop and bar in Beijing. This logo and VI design integrate the founder’s spirits, which is the power and softness as a mother.",
+        },
+      },
+      {
+        name: "AMA",
+        length: 7,
+        description: {
+          name: "Socrate Cafe VI - Guangdong",
+        },
+      },
+      {
+        name: "AMA-W",
+        length: 6,
+        description: {
+          name: "Blue Sense Virtual Shop VI",
+        },
+      },
+      {
+        name: "AMA-Z",
+        length: 3,
+        description: {
+          name: "Diva's Collection - 2015",
         },
       },
       ],
