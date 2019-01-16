@@ -13,7 +13,7 @@ export const menu = [
   }, 
   {
     title: 'Half Moon',
-    to: '/photolist/normal/left/0'
+    to: '/photoindex/normal/left/0'
   }, 
   {
     title: '2017',
@@ -26,7 +26,7 @@ export const menu = [
   list: [
  {
     title: 'Just so 如此',
-    to: '/photolist/normal/left/1'
+    to: '/photoindex/normal/left/1'
   },
  {
     title: 'Book of Stephen Yas',
@@ -47,19 +47,19 @@ export const menu = [
   },
  {
     title: 'VI. Cakenaire',
-    to: '/photolist/normal/right/0'
+    to: '/photoindex/normal/right/0'
   },
  {
     title: 'VI. Socrate',
-    to: '/photolist/normal/right/1'
+    to: '/photoindex/normal/right/1'
   },
  {
     title: 'VI. Blue Sense',
-    to: '/photolist/normal/right/2'
+    to: '/photoindex/normal/right/2'
   },
  {
     title: 'Diva Collection',
-    to: '/photolist/normal/right/3'
+    to: '/photoindex/normal/right/3'
   },
 ],
 },
@@ -76,15 +76,15 @@ export const menu = [
   },
  {
     title: 'Airbnb',
-    to: '/photolist/normal/left/2'
+    to: '/photoindex/normal/left/2'
   },
  {
     title: 'Fendi BB',
-    to: '/photolist/normal/left/3'
+    to: '/photoindex/normal/left/3'
   },
  {
     title: 'Oversea Love',
-    to: '/photolist/normal/left/4'
+    to: '/photoindex/normal/left/4'
   },
 ],
 },
