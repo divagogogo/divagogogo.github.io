@@ -11,6 +11,7 @@
 .description-value {
   font-size: 14px;
   font-family: FuturaBook;
+  text-align: justify;
 }
 .title {
   text-align: center;
