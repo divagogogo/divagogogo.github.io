@@ -122,6 +122,9 @@
         </br>
         <span class="text-bold">Experience:</span></br>Planner - AKQA Shanghai</br>Account Executive (Intern) - TBWA Shanghai</br>Copy & Designer (Intern) - Utop Shanghai</br>Retoucher - Veraho Production</br>New Media Journalist - Xinhua News Agency Guangzhou</br>Global Exchange - Volunteer In Indonesia (AIESEC)</br>
         </br>
+        <span class="text-bold">Exhibition:</span></br>Imageless Dummy Photo Zine 2018 <span class="dis-block"></span>- Simon, Wuxi, China</br>
+        </br>
+        </br>
         <span class="text-bold">Education:</span></br>Advertisement <span class="dis-block"></span>- Jinan University Guangzhou</br>
         </br>
         <span class="text-bold">Contact Me:</span></br>Email: divagogogo@gmail.com</br>
