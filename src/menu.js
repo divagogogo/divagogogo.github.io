@@ -4,45 +4,36 @@ export const menu = [
   list: 
  [
   {
-    title: 'ORDER 序',
+    title: '2019.Universe宙',
+    to: '/photolist/2019'
+  }, 
+  {
+    title: '2018.Order序',
     to: '/photolist/order'
   }, 
   {
-    title: 'Still life',
-    to: '/photolist/stilllife'
-  }, 
-  {
-    title: 'Half Moon',
-    to: '/photoindex/normal/left/0'
-  }, 
-  {
-    title: '2017',
+    title: '2017.Born生',
     to: '/photolist/2017'
   },
- ],
-}, 
-{
-  name: 'BOOK',
-  list: [
- {
-    title: 'Just so 如此',
-    to: '/photoindex/normal/left/1'
-  },
- {
-    title: 'Book of Stephen Yas',
+  {
+    title: 'Still life',
     to: null
-  },
-],
+  }, 
+  {
+    title: 'Landscape',
+    to: '/photolist/Landscape'
+  }, 
+ ],
 }, 
 {
   name: 'ART',
   list: [
  {
-    title: 'Five Elements',
-    to: null
+    title: 'Four Spirit.四靈',
+    to: '/photoindex/normal/center/0'
   },
  {
-    title: 'Zen',
+    title: 'Zen.禪',
     to: '/photolist/zen'
   },
  {
@@ -54,47 +45,51 @@ export const menu = [
     to: '/photoindex/normal/right/1'
   },
  {
-    title: 'VI. Blue Sense',
+    title: 'Diva Collection 2015',
     to: '/photoindex/normal/right/2'
   },
  {
-    title: 'Diva Collection',
+    title: 'Oversea Love',
     to: '/photoindex/normal/right/3'
   },
 ],
 },
- {
-  name: 'PROJECT',
+{
+  name: 'BOOK',
   list: [
  {
-    title: 'Evian',
+    title: 'Just so 如此',
+    to: '/photoindex/normal/left/0'
+  },
+ {
+    title: 'Book of Yas',
     to: null
-  },
- {
-    title: 'Gore-Tex',
-    to: null
-  },
- {
-    title: 'Airbnb',
-    to: '/photoindex/normal/left/2'
-  },
- {
-    title: 'Fendi BB',
-    to: '/photoindex/normal/left/3'
-  },
- {
-    title: 'Oversea Love',
-    to: '/photoindex/normal/left/4'
   },
 ],
-},
+}, 
 ];
 
 
 export const list = {
+  2019: {
+    title: '2019.Universe宙',
+    desc: 'Brand new 2019, I focus on exploring the relationship of human and the universe. It tend to use estern elements to tell the unlock the universal story.',
+    sublist: {
+      left: [
+        {
+          name: "20191",
+          length: 12,
+          description: {
+            name: "Flowing",
+            value: "Everying is flowing</br></br></br>Model: Marina</br>Stylist: Yana Lee<br/>Garment: Diang Cao ",
+          }, 
+        },
+      ],
+    },
+  },
   order: {
-    title: 'ORDER 序',
-    desc: 'ORDER project is a new episode of my photo project in 2018. It is not about the what call youth culture, but the power of them, is what i wanna express. The project ORDER, is to discover the power of order around me. Those who seem silent, but have their own understand of the world, to enjoy life in their own ways.</br>Play with them, create with them, express with them. Their power of ORDER',
+    title: 'Order 序',
+    desc: 'Order is the main spirit of work in 2018. In this year, I spent more time exploring the power of the youth. I tried to pay more attention to those who seems silent in their daily life while on the side, they have their own power, own order, which helping them to stand alone in the society with their unique understanding on the world, and to enjoy life in their own ways.</br>Play with them, create with them, express with them. Their power of ORDER',
     sublist: {
       left: [
         {
@@ -103,16 +98,16 @@ export const list = {
           video: "http://go.divagao.com/PRL1:DUER.mp4",
           videoCover: "http://go.divagao.com/PRL1:DUER.jpg",
           description: {
-            name: "ORDER - DUER",
-            value: "SHINE...</br></br></br>MODEL: CASSIE</br>GARMENT & STYLIST: ALICE CHAN</br>SHOOTING IN CANTON",
+            name: "Order - Duer",
+            value: "Shine...</br></br></br>Model: Cassie Wong</br>Garment & Stylist: Alice Chan ",
           }, 
         },
         {
           name: "LA-U",
           length: 9,
           description: {
-            name: "ORDER - HOME OR MALL",
-            value: "Break the boundary of home and mall!</br></br></br>MODEL: SABRINA</br>GARMENT & STYLIST: FIONA</br>SHOOTING IN SH",
+            name: "Order - Home or Mall",
+            value: "Break the boundary of home and mall!</br></br></br>Model: Polina</br>Garment & Stylist: Fiona Yin",
           }, 
         },
         {
@@ -123,8 +118,8 @@ export const list = {
           audioTitle: 'Mounting',
           audioAuthor: 'Freddie',
           description: {
-            name: "ORDER - Mounting",
-            value: "\"That is a truer world\"</br>Struggling. From home to the big city. From moist, puzzled, to sleepy and contrived. This is not myself.</br>Though attach to the past, I will still move forward. Regardless of the consequences. Until find the real me</br></br></br>MODEL: FREDDIE</br>SHOOTING IN RONDA,SPAIN",
+            name: "Order - Mounting",
+            value: "\"That is a truer world\"</br>Struggling. From home to the big city. From moist, puzzled, to sleepy and contrived. This is not myself.</br>Though attach to the past, I will still move forward. Regardless of the consequences. Until find the real me</br></br></br>Model: Freddie Hu",
           }, 
         },
       ],
@@ -133,24 +128,24 @@ export const list = {
           name: "PRM1",
           length: 7,
           description: {
-            name: "ORDER - FUSION",
-            value: "...</br></br></br>MODEL: SATORI</br>GARMENT & STYLIST: YANA LEE</br>SHOOTING IN SHANGHAI",
+            name: "Order - Fusion",
+            value: "...</br></br></br>Model: Satori Zhang</br>Garment & Stylist: Yana Lee",
           }, 
         },
         {
           name: "MA-R",
           length: 9,
           description: {
-            name: "ORDER - BACK TO OVAL",
-            value: "Recharge from the safety of oval</br></br></br>MODEL: LEVU</br>SHOOTING IN SH",
+            name: "Order - Back to Oval",
+            value: "Recharge from the safety of oval</br></br></br>Model: Levu",
           }, 
         },
         {
           name: "MA-S",
           length: 6,
           description: {
-            name: "ORDER - PLANET MOVEMENT",
-            value: "Feel the energy, of the planet movement</br></br></br>MODEL: SABRINA</br>GARMENT & STYLIST: FIONA</br>SHOOTING IN SH",
+            name: "Order - Planet Movement",
+            value: "Feel the energy, of the planet movement</br></br></br>Model: Sabrina</br>Garment & Stylist: Fiona Yin",
           }, 
         },
         {
@@ -158,7 +153,7 @@ export const list = {
           length: 9,
           description: {
             name: "Play",
-            value: "MODEL: RRR</br>SHOOTING IN SHANGHAI",
+            value: "Model: RRR",
           }, 
         },
       ],
@@ -167,8 +162,8 @@ export const list = {
           name: "PRR1",
           length: 9,
           description: {
-            name: "ORDER - NONE",
-            value: "...</br></br></br>MODEL: CHENGZ</br>GARMENT & STYLIST: DIVAGO</br>SHOOTING IN SHANGHAI",
+            name: "Order - Drown in Darkness",
+            value: "...</br></br></br>Model: ChengZ</br>Garment & Stylist: Divago",
           }, 
         },
         {
@@ -176,7 +171,7 @@ export const list = {
           length: 9,
           description: {
             name: "Child Circle",
-            value: "I hope could be back to my childhood, to be wild again. </br>MODEL: POLINA</br>SHOOTING IN SHANGHAI",
+            value: "I hope could be back to my childhood, to be wild again. </br>MODEL: Polina<br/>Garment & Stylist:",
           },  
         },
         {
@@ -184,15 +179,15 @@ export const list = {
           length: 9,
           description: {
             name: "Island",
-            value: "Never wanna burst into my pure land.</br>MODEL: ZM</br>SHOOTING IN SHANGHAI",
+            value: "Never wanna burst into my pure land.</br>Model: Satori Zhang",
           }, 
         },
       ],
     },
   },
   2017: {
-    title: '2017',
-    desc: 'Diva‘s work of 2017',
+    title: '2017.Born生',
+    desc: 'Diva‘s work of 2017. It was new, naive but still tried to tell the youth stories of their own.',
     sublist: {
       left: [
       {
@@ -200,7 +195,7 @@ export const list = {
         length: 9,
         description: {
           name: "Abysmal",
-          value: "MODEL: DAYUAN</br>SHOOTING IN SHANGHAI",
+          value: "Model: Jiyuan Zou",
         }, 
       },
       {
@@ -208,7 +203,15 @@ export const list = {
         length: 13,
         description: {
           name: "Dark side",
-          value: "MODEL: MARINA</br>SHOOTING IN SHANGHAI",
+          value: "Model: Marina",
+        }, 
+      },
+      {
+        name: "MB",
+        length: 8,
+        description: {
+          name: "Half Moon",
+          value: "Model: Jiacheng Huang",
         }, 
       },
       ],
@@ -218,7 +221,7 @@ export const list = {
         length: 9,
         description: {
           name: "Tension",
-          value: "MODEL: MING</br>SHOOTING IN SHANGHAI",
+          value: "Model: Ming",
         },
       },
       {
@@ -226,7 +229,7 @@ export const list = {
         length: 9,
         description: {
           name: "Pinky Cool",
-          value: "MODEL: YANA</br>SHOOTING IN SHANGHAI",
+          value: "ModelL: Yana Lee",
         }, 
       },
       ],
@@ -236,7 +239,7 @@ export const list = {
         length: 9,
         description: {
           name: "No",
-          value: "MODEL: KUI</br>SHOOTING IN MACAO",
+          value: "Model: Kui Zhang",
         },
       },
       {
@@ -244,15 +247,27 @@ export const list = {
         length: 9,
         description: {
           name: "RYB",
-          value: "MODEL: ATSUKI</br>SHOOTING IN JAPAN",
+          value: "Model: Atsuki",
         },  
       },
       ],
     },
   },
-  stilllife: {
-    title: 'Still life',
-    desc: 'still life from all over the world.',
+  Stilllife: {
+    title: 'Stilllife',
+    desc: 'Still life experience of fashion/styling/setting',
+    sublist: {
+      left: [
+],
+      Center: [
+],
+      Right: [
+],
+    },
+  },
+  landscape: {
+    title: 'Landscape',
+    desc: 'Daily perspective of all over the world.',
     sublist: {
       left: [
         {
@@ -283,7 +298,7 @@ export const list = {
         name: "MA-T",
         length: 9,
         description: {
-          name: "City - MACAU",
+          name: "City - Macau",
         },
       }, 
      {
@@ -318,7 +333,7 @@ export const list = {
         length: 12,
         description: {
           name: "Crossing",
-          value: "SHOOTING IN SPAIN",
+          value: "Espana",
         }, 
       },  
       ],
@@ -326,7 +341,7 @@ export const list = {
   },
   zen: {
     title: 'Zen',
-    desc: 'ZEN (禪) is a series of my art expression about lives and life.  </br> ZEN originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. </br> What you can see from this series maybe a drawing, or maybe an effect made by Photoshop, without color. But all series creations are my own understand and thinking about those who struggle between peace and suffering, or maybe about nature.',
+    desc: 'Zen is a series of my art expression about the world and life. Zen originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. <br/>What you can see from this series might a drawing, or a visual effect. All the series creation are my own understand & thinking about those who struggle between peace and suffering, or about the nature.',
     sublist: {
       left: [
       {
@@ -411,41 +426,48 @@ export const list = {
     sublist: {
       left: [
       {
-        name: "MB",
-        length: 8,
-        description: {
-          name: "Half Moon",
-          value: "MODEL: JC</br>SHOOTING IN ZHUHAI",
-        }, 
-      },
-      {
         name: "BOOK1",
         length: 10,
         description: {
           name: "JUST SO 如此",
-          value: "My book is at SAMON, Wuxi</br>Imageless Dummy Photo-Zine Award 2018</br>Held by Imageless Studio</br>Just So is a still life photo book made by Divago, including the works in the past 3 years. ",
+          value: "Just So is a photo book created by Divago.<br/>It includes the works in the past 3 years, mostly shot on iPhone 6/X. It tell a story about that using a daily perspective to observe and engage with the world, you will find the world is made up of same elements.<br/>世间的组合，不过如此。<br/>但如此的组合，有那么五彩缤纷，那么波澜不惊。<br/><br/>This book is exhibited in Imageless Dummy Photo Zine 2018, Simon Cafe, Wuxi, China. ",
         }, 
       },
+      ],
+      center: [
       {
-        name: "PLA-Z",
-        length: 5,
-        video: "http://go.divagao.com/PLA-Z%2060S.mp4",
-        videoCover: "http://go.divagao.com/60s.jpg",
+        name: "FOUR",
+        length: 4,
         description: {
-          name: "Airbnb. Welcome Love",
-          value: "Airbnb's global mission \"Belong Anywhere\" doesn't translate well to Chinese. The brand needed a new name and strategy to connect with China's millennial travellers, a community of 384 million and growing, bigger than the entire US population.For the rebrand of Airbnb in China – Ai Bi Ying which means \"Welcome Each Other With Love\", AKQA Shanghai created an integrated campaign showing how travel opens us to a new world of love. All we have to do is welcome it.Through an anthem film, OOH and digital comms, we featured the unique homes, friendly hosts, vibrant neighbuorhoods, and unforgettable experiences you can book with Airbnb.</br>ROLE: PLANNER "
+          name: "Four Spirit 四灵兽",
+          value: "北方壬癸水玄武<br/>东方甲乙木青龙<br/>南方丙丁火朱雀<br/>西方庚辛金白虎",
+        }, 
+      },
+      ],
+      right: [
+      {
+        name: "ALA-Z1",
+        length: 7,
+        description: {
+          name: "Cakenaire VI & LOGO - Beijing",
+          value: "Cakenaire.耐 is a cake shop in Beijing owned by a young mother. the stereotype that women need to be house wife still exists in China. While the shop owner prove that, though being a young mother, we still can explore their wonderful life rather than just stay at home and take care of children. <br/>'To be soft, is to be powerful.' is the slogan of this brand. It represent the spirit of the young mother, there is also gentle and powerful in their mind.<br/><br/>The LOGO is a symbol of different elements:<br/>- C as the main symble of the LOGO, strong and simple. The sharp corners show the strong power, which is used as the feature of the typography.<br/>- 30 degree cut-off rule represents the cake. It is also as the auxiliary graph in the whole VI.<br/>LOGO & VI & Typography: Divago<br/>Photo: Divago<br/>Location: Beijing",
         },
       },
       {
-        name: "PRA-Z",
-        length: 1,
-        indexImgType: "gif",
-        video: "http://go.divagao.com/PRA-Z.mp4",
-        videoCover: "http://go.divagao.com/PRA-Z%20COVER.jpg",
+        name: "AMA",
+        length: 8,
         description: {
-          name: "FENDI BB Family Social Campaign",
-          value: "FENDI is a famous luxury brand. They wanted to launch the BB Family(the bag hanging drops series) in China through social platforms. After analyzing FENDI’s performance on social media, and finding out the FENDI girls characteristic, their lifestyle and their definition of fashion. To see how to communicate with them on social platform with a different tonality. </br>ROLE: PLANNER "
-        } 
+          name: "Socrate Cafe VI - Canton",
+          value: "Socrates Cafe is a coffee shop in JNU library, which is created by students. It represents the anxiety of knowledge, the spirit of youth and the authenticity of JNU.<br/>The LOGO is a symbol of different elements:<br/>- the middle shape represents the Socrates's academic spirit<br/>- the 3/4 circle symbolize the JNU library, the linkage with the middle face shape means the connection of the cafe and the library, which is a relax place for the student.<br/>LOGO & VI: Divago<br/>Photo: Divago",
+        },
+      },
+      {
+        name: "AMA-Z",
+        length: 3,
+        description: {
+          name: "Diva's Collection 2015",
+          value: "Post of Divago's photo collection 2015",
+        },
       },
       {
         name: "PRA",
@@ -455,38 +477,7 @@ export const list = {
         videoCover: "http://go.divagao.com/PRA/3.png",
         description: {
           name: "Love from Overseas Chinese",
-          value: "This is a prevue of the documentary about how people's life change after the government gave the movable TVs in the Tibetan Areas of Sichuan and Yunnan. We spent two months in the Tibetan areas to collect materials for this documentary.</br>ROLE: FILM & CUTTER"
-        },
-      },
-      ],
-      right: [
-      {
-        name: "ALA-Z1",
-        length: 6,
-        description: {
-          name: "CAKENAIRE VI & LOGO - Beijing (TBC)",
-          value: "CAKENAIRE is a dessert shop and bar in Beijing. This logo and VI design integrate the founder’s spirits, which is the power and softness as a mother.",
-        },
-      },
-      {
-        name: "AMA",
-        length: 7,
-        description: {
-          name: "Socrate Cafe VI - Guangdong",
-        },
-      },
-      {
-        name: "AMA-W",
-        length: 6,
-        description: {
-          name: "Blue Sense Virtual Shop VI",
-        },
-      },
-      {
-        name: "AMA-Z",
-        length: 3,
-        description: {
-          name: "Diva's Collection - 2015",
+          value: "This is a prevue of the documentary about how people's life change after the government gave the movable TVs in the Tibetan Areas of Sichuan and Yunnan. We spent two months in the Tibetan areas to collect materials for this documentary.</br>Role: Film & Editor"
         },
       },
       ],
