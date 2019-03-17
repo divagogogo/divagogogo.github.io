@@ -21,7 +21,7 @@ export const menu = [
   }, 
   {
     title: 'Landscape',
-    to: '/photolist/Landscape'
+    to: '/photolist/stilllife'
   }, 
  ],
 }, 
@@ -253,19 +253,7 @@ export const list = {
       ],
     },
   },
-  Stilllife: {
-    title: 'Stilllife',
-    desc: 'Still life experience of fashion/styling/setting',
-    sublist: {
-      left: [
-],
-      Center: [
-],
-      Right: [
-],
-    },
-  },
-  landscape: {
+  stilllife: {
     title: 'Landscape',
     desc: 'Daily perspective of all over the world.',
     sublist: {
