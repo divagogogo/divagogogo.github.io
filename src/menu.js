@@ -17,7 +17,7 @@ export const menu = [
   },
   {
     title: 'Still life',
-    to: null
+    to: '/photolist/456'
   }, 
   {
     title: 'Landscape',
@@ -62,6 +62,10 @@ export const menu = [
     to: '/photoindex/normal/left/0'
   },
  {
+    title: '醫院終止計劃 Hospital terminated plan ',
+    to: null
+  },
+ {
     title: 'Book of Yas',
     to: null
   },
@@ -82,6 +86,16 @@ export const list = {
           description: {
             name: "Flowing",
             value: "Everying is flowing</br></br></br>Model: Marina</br>Stylist: Yana Lee<br/>Garment: Diang Cao ",
+          }, 
+        },
+      ],
+      center: [
+        {
+          name: "20192",
+          length: 8,
+          description: {
+            name: "Planet Explode",
+            value: "And when I think back to the old toys, Those are the signs of my little universe exploding</br></br></br>Model: Levu</br>Stylist: Divago",
           }, 
         },
       ],
@@ -324,6 +338,32 @@ export const list = {
           value: "Espana",
         }, 
       },  
+      ],
+    },
+  },
+  456: {
+    title: 'Still Life',
+    desc: 'Divago still life creation.',
+    sublist: {
+      left: [
+        {
+          name: "S20191",
+          length: 9,
+          description: {
+            name: "Echo back from the universe",
+            value: "那些閃閃亮的星,是來自宇宙的的喚應</br>Jewelry @the_echostudio</br>Stylist & Photo Divago</br>Assistant Michelle Gao ",
+          }, 
+        },
+      ],
+      center: [
+        {
+          name: "S20191",
+          length: 4,
+          description: {
+            name: "宇宙霓虹系列 / Universal Neon Series",
+            value: "1. Vintage Green Apple Tie + Purple Velvet Shirt</br>2. Vintage Pink Chiffon Shirt+ Black Feather Fan + Salami</br>3. Green Plaid Jacket + IKEA Bag</br>4. Pattern Shirt + Dark Green Stripe Tie</br>Stylist Fiona Yin & DivaGo",
+          }, 
+        },
       ],
     },
   },

@@ -117,7 +117,7 @@
     <div class="box" v-once>
       <img class="info-img" src="http://go.divagao.com/Info.jpg">
       <div class="content">
-        <span class="text-name"><span class="text-bold">Diva.Go</span></span></br>
+        <span class="text-name"><span class="text-bold">Diva.Go KaWing 高價硬</span></span></br>
         <span class="text-type">PHOTOS / DESIGN / STRATEGY</span></br>
         </br>
         <span class="text-bold">Experience:</span></br>Planner - AKQA Shanghai</br>Account Executive (Intern) - TBWA Shanghai</br>Copy & Designer (Intern) - Utop Shanghai</br>Retoucher - Veraho Production</br>New Media Journalist - Xinhua News Agency Guangzhou</br>Global Exchange - Volunteer In Indonesia (AIESEC)</br>
