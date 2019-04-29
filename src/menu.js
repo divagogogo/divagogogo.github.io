@@ -351,7 +351,7 @@ export const list = {
           length: 9,
           description: {
             name: "Echo back from the universe",
-            value: "那些閃閃亮的星</br>J是來自宇宙的的喚應</br>Jewelry @the_echostudio</br>Stylist & Photo Divago</br>Assistant Michelle Gao ",
+            value: "那些閃閃亮的星</br>是來自宇宙的的喚應</br>Jewelry @the_echostudio</br>Stylist & Photo Divago</br>Assistant Michelle Gao ",
           }, 
         },
       ],
