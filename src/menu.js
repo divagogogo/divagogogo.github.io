@@ -455,10 +455,10 @@ export const list = {
       left: [
       {
         name: "BOOK1",
-        length: 10,
+        length: 8,
         description: {
           name: "JUST SO 如此",
-          value: "Just So is a photo book created by Divago.<br/>It includes the works in the past 3 years, mostly shot on iPhone 6/X. It tell a story about that using a daily perspective to observe and engage with the world, you will find the world is made up of same elements.<br/>世间的组合，不过如此。<br/>但如此的组合，有那么五彩缤纷，那么波澜不惊。<br/><br/>This book is exhibited in Imageless Dummy Photo Zine 2018, Simon Cafe, Wuxi, China. ",
+          value: "Just So is a photo book created by Divago.<br/>It includes the works in the past 3 years, mostly shot on iPhone 6/X. It tell a story about that using a daily perspective to observe and engage with the world, you will find the world is made up of same elements.<br/>世间的组合，不过如此。<br/>但如此的组合，又那么五彩缤纷，那么波澜不惊。<br/><br/>This book is exhibited in Imageless Dummy Photo Zine 2018, Simon Cafe, Wuxi, China. ",
         }, 
       },
       ],
