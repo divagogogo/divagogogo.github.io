@@ -43,7 +43,17 @@
   .fade-enter, .fade-leave-to {
     opacity: 0;
   }
-/*   
+  .main-text-detail {
+    text-align: right;
+    position: absolute;
+    right: 3.7vw;
+    bottom: 3rem;
+    border-bottom: 1px solid #fff;
+    font-family: FuturaBook;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  /*
   .main-text-wrap {
     width: 100%;
     height: 100%;
@@ -151,6 +161,10 @@
             v-show="currentIndex === i"
             v-lazy="`${imgText}${i}.jpg`">
         </transition>
+      </div>
+      <div class="main-text-detail">
+        <p>
+          <a href="http://www.beian.gov.cn/">粤ICP备18021888号</a></p>
       </div>
       <!-- <div class="main-bg" :class="{'main-op': showText}" @click="showText=!showText">
       </div>
