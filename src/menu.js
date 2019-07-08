@@ -58,7 +58,7 @@ export const menu = [
   name: 'BOOK',
   list: [
  {
-    title: 'Just so 如此',
+    title: '如此 Just so',
     to: '/photoindex/normal/left/0'
   },
  {
@@ -500,7 +500,7 @@ export const list = {
         name: "BOOK1",
         length: 4,
         description: {
-          name: "JUST SO 如此",
+          name: "如此 Just So ",
           value: "Just So is a photo book created by Divago.<br/>It includes the works in the past 3 years, mostly shot on iPhone 6/X. It tell a story about that using a daily perspective to observe and engage with the world, you will find the world is made up of same elements.<br/>世间的组合，不过如此。<br/>但如此的组合，又那么五彩缤纷，那么波澜不惊。<br/><br/>This book is now for sale, please contact me.",
         }, 
       },
