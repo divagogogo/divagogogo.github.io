@@ -62,12 +62,8 @@ export const menu = [
     to: '/photoindex/normal/left/0'
   },
  {
-    title: '醫院終止計劃 Hospital terminated plan ',
-    to: null
-  },
- {
-    title: 'Book of Yas',
-    to: null
+    title: '醫院終止計劃 Hospital Termination',
+    to: '/photoindex/normal/left/1'
   },
 ],
 }, 
@@ -80,6 +76,14 @@ export const list = {
     desc: 'Brand new 2019, I focus on exploring the relationship of human and the universe. It tend to use estern elements to tell the unlock the universal story.',
     sublist: {
       left: [
+      {
+          name: "20195",
+          length: 18,
+          description: {
+            name: "Alien Childhood",
+            value: "A commissioned work for Malaysian fashion label- Dynameek, which exudes fun and humor in its brand tone and products. </br>The concept for the work is a surreal visual interpretation of curious extraterrestrial beings from another planet, who delights themselves in each other with simple, yet intriguing explorations.</br></br></br>Story & Photo Me</br>Art Direction & Stylist Miachen</br>Stylist Assistant SundialLee</br>Make Up Artist Paw Paw</br>Model Wen Wen & Xiuli</br>Wardrobe & Accessory Dynameek / SHUSHUTONGstudio /Susan Alexandra/ChilliPussy/CHARLENE LENG/YU/SAYA/V Trend",
+          }, 
+        },
         {
           name: "20191",
           length: 12,
@@ -91,11 +95,29 @@ export const list = {
       ],
       center: [
         {
+          name: "20194",
+          length: 11,
+          description: {
+            name: "Afterliving",
+            value: "In Chinese traditions, it is widely believe that there is an afterlife and ironically, the perception of that world, is largely based on the context of the living world. The Chinese believes death does not signify the end, and that the afterlife is a continuation of one’s life. The society takes on a rather sardonic approach with their optimism of how life could be better in the netherworld, and usually burn incense paper or paper objects crafted in the forms of humans, cars or buildings to their dead relatives, in the hope that they would be able to have a better “life” in the netherworld.</br>The photography art direction features a ghostly but yet, beautiful subject in a muted color environment with paper inspired clothings. Through the execution, I wish to portray how someone is seeking to live out the perfect afterlife and at the same time, highlight the warped optimism from this bizarre social phenomenon. </br></br></br>Model: Ivy Wang</br>Stylist: Yana Lee",
+          }, 
+        },
+      {
           name: "20192",
           length: 8,
           description: {
             name: "Planet Explode",
             value: "And when I think back to the old toys, Those are the signs of my little universe exploding</br></br></br>Model: Levu</br>Stylist: Divago",
+          }, 
+        },
+      ],
+      right: [
+        {
+          name: "20193",
+          length: 13,
+          description: {
+            name: "Boundless",
+            value: "A commissioned work for an indie fashion label based in NYC, UNDERTINT.</br>UNDERTINT is a female clothing brand which prides itself with using only the finest silk. The choice of textile material is elegant, beautiful and could express the most intricate of details in its clothing designs, but yet it is fragile. Traditionally when worn, the wearer takes great caution in not to tear it accidentally and hence, restricts its movement.</br>The photography takes on a concept to to challenge this traditional notion, by featuring the clothes in a state of freedom and motion, and at the same time, juxtaposing it in an environment which encourages this idea. The imageries are presented in a way that hopes to evoke the feeling of boundless freedom.</br></br></br>Model: Fanni</br>Stylist: Divago",
           }, 
         },
       ],
@@ -132,8 +154,8 @@ export const list = {
           audioTitle: 'Mounting',
           audioAuthor: 'Freddie',
           description: {
-            name: "Order - Mounting",
-            value: "\"That is a truer world\"</br>Struggling. From home to the big city. From moist, puzzled, to sleepy and contrived. This is not myself.</br>Though attach to the past, I will still move forward. Regardless of the consequences. Until find the real me</br></br></br>Model: Freddie Hu",
+            name: "Order - Struggler",
+            value: "A personal project which is an artistic reinterpretation of the subject/ model’s emotional struggles in a foreign country, where he seeks to better understand his new environment, and most importantly - himself.</br></br></br>Model: Freddie Hu",
           }, 
         },
       ],
@@ -192,8 +214,8 @@ export const list = {
           name: "RA-X",
           length: 9,
           description: {
-            name: "Island",
-            value: "Never wanna burst into my pure land.</br>Model: Satori Zhang",
+            name: "Little Territory",
+            value: "A light hearted and fun project which I seek to capture the purest expression of a young girl who is building her own fantasy kingdom, where no-one is allowed to intrude and disrupt the fun she is having. </br>Model: Satori Zhang",
           }, 
         },
       ],
@@ -351,7 +373,7 @@ export const list = {
           length: 9,
           description: {
             name: "Echo back from the universe",
-            value: "那些閃閃亮的星</br>是來自宇宙的的喚應</br>Jewelry @the_echostudio</br>Stylist & Photo Divago</br>Assistant Michelle Gao ",
+            value: "A commissioned work for a jewelry brand based in Shanghai.The jewelry brand utilizes natural materials like jade and stones, which are mostly popular with the older generations of Chinese folks. The brand takes a contemporary approach in its design to cater to the taste of the younger generation.</br>The product photography takes on a concept of how the the natural materials used in the jewelry, thou rough and rudimentary, are centric to the formation of the planets in the solar system. The concept is told through a minimalistic visual interpretation of Echoes, to highlight the connection between the raw materials and its relationship with the universe.</br>Jewelry @the_echostudio</br>Stylist & Photo Divago</br>Assistant Michelle Gao",
           }, 
         },
       ],
@@ -372,6 +394,13 @@ export const list = {
     desc: 'Zen is a series of my art expression about the world and life. Zen originally is a school of Mahayana Buddhism that originated in China during the Tang dynasty as Chan Buddhism. <br/>What you can see from this series might a drawing, or a visual effect. All the series creation are my own understand & thinking about those who struggle between peace and suffering, or about the nature.',
     sublist: {
       left: [
+      {
+        name: "ALA-T",
+        length: 1,
+        description: {
+          name: "ZEN - 洛書",
+        },
+      },
       {
         name: "AMA-V",
         length: 1,
@@ -403,6 +432,13 @@ export const list = {
       ],
       center: [
       {
+        name: "AMA-T",
+        length: 1,
+        description: {
+          name: "ZEN - 卵",
+        },
+      },
+      {
         name: "AMA-U",
         length: 1,
         indexImgType: "gif",
@@ -426,6 +462,13 @@ export const list = {
       },
       ],
       right: [
+      {
+        name: "ARA-T",
+        length: 1,
+        description: {
+          name: "ZEN - 非",
+        },
+      },
       {
         name: "ARA-W",
         length: 1,
@@ -455,10 +498,18 @@ export const list = {
       left: [
       {
         name: "BOOK1",
-        length: 8,
+        length: 4,
         description: {
           name: "JUST SO 如此",
-          value: "Just So is a photo book created by Divago.<br/>It includes the works in the past 3 years, mostly shot on iPhone 6/X. It tell a story about that using a daily perspective to observe and engage with the world, you will find the world is made up of same elements.<br/>世间的组合，不过如此。<br/>但如此的组合，又那么五彩缤纷，那么波澜不惊。<br/><br/>This book is exhibited in Imageless Dummy Photo Zine 2018, Simon Cafe, Wuxi, China. ",
+          value: "Just So is a photo book created by Divago.<br/>It includes the works in the past 3 years, mostly shot on iPhone 6/X. It tell a story about that using a daily perspective to observe and engage with the world, you will find the world is made up of same elements.<br/>世间的组合，不过如此。<br/>但如此的组合，又那么五彩缤纷，那么波澜不惊。<br/><br/>This book is now for sale, please contact me.",
+        }, 
+      },
+      {
+        name: "BOOK2",
+        length: 1,
+        description: {
+          name: "醫院終止計劃 Hospital Termination(TBC)",
+          value: "An interesting book about the treatment process of one of my illnesses and exhorts everyone to pay attention to the body.",
         }, 
       },
       ],
