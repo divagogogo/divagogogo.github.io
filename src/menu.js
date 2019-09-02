@@ -16,10 +16,6 @@ export const menu = [
     to: '/photolist/2017'
   },
   {
-    title: 'Still life',
-    to: '/photolist/456'
-  }, 
-  {
     title: 'Landscape',
     to: '/photolist/123'
   }, 
@@ -58,12 +54,12 @@ export const menu = [
   name: 'BOOK',
   list: [
  {
-    title: '如此 Just so',
-    to: '/photoindex/normal/left/0'
-  },
- {
     title: '醫院終止計劃 Hospital Termination',
     to: '/photoindex/normal/left/1'
+  },
+ {
+    title: '如此 Just so',
+    to: '/photoindex/normal/left/0'
   },
 ],
 }, 
@@ -85,6 +81,14 @@ export const list = {
           }, 
         },
         {
+          name: "S20191",
+          length: 9,
+          description: {
+            name: "Echo back from the universe",
+            value: "A commissioned work for a jewelry brand based in Shanghai.The jewelry brand utilizes natural materials like jade and stones, which are mostly popular with the older generations of Chinese folks. The brand takes a contemporary approach in its design to cater to the taste of the younger generation.</br>The product photography takes on a concept of how the the natural materials used in the jewelry, thou rough and rudimentary, are centric to the formation of the planets in the solar system. The concept is told through a minimalistic visual interpretation of Echoes, to highlight the connection between the raw materials and its relationship with the universe.</br>Jewelry @the_echostudio</br>Stylist & Photo Divago</br>Assistant Michelle Gao",
+          }, 
+        },
+        {
           name: "20191",
           length: 12,
           description: {
@@ -94,6 +98,14 @@ export const list = {
         },
       ],
       center: [
+        {
+          name: "S20193",
+          length: 11,
+          description: {
+            name: "Utopia 烏托邦",
+            value: "原指與現實社會隔絕、生活安樂的理想境界</br>Stylist & Photo Divago</br>GB21 Studio",
+          }, 
+        },
         {
           name: "20194",
           length: 11,
@@ -118,6 +130,14 @@ export const list = {
           description: {
             name: "Boundless",
             value: "A commissioned work for an indie fashion label based in NYC, UNDERTINT.</br>UNDERTINT is a female clothing brand which prides itself with using only the finest silk. The choice of textile material is elegant, beautiful and could express the most intricate of details in its clothing designs, but yet it is fragile. Traditionally when worn, the wearer takes great caution in not to tear it accidentally and hence, restricts its movement.</br>The photography takes on a concept to to challenge this traditional notion, by featuring the clothes in a state of freedom and motion, and at the same time, juxtaposing it in an environment which encourages this idea. The imageries are presented in a way that hopes to evoke the feeling of boundless freedom.</br></br></br>Model: Fanni</br>Stylist: Divago",
+          }, 
+        },
+        {
+          name: "S20192",
+          length: 4,
+          description: {
+            name: "宇宙霓虹系列 / Universal Neon Series",
+            value: "1. Vintage Green Apple Tie + Purple Velvet Shirt</br>2. Vintage Pink Chiffon Shirt+ Black Feather Fan + Salami</br>3. Green Plaid Jacket + IKEA Bag</br>4. Pattern Shirt + Dark Green Stripe Tie</br>Stylist Fiona Yin & DivaGo",
           }, 
         },
       ],
@@ -360,32 +380,6 @@ export const list = {
           value: "Espana",
         }, 
       },  
-      ],
-    },
-  },
-  456: {
-    title: 'Still Life',
-    desc: 'Divago still life creation.',
-    sublist: {
-      left: [
-        {
-          name: "S20191",
-          length: 9,
-          description: {
-            name: "Echo back from the universe",
-            value: "A commissioned work for a jewelry brand based in Shanghai.The jewelry brand utilizes natural materials like jade and stones, which are mostly popular with the older generations of Chinese folks. The brand takes a contemporary approach in its design to cater to the taste of the younger generation.</br>The product photography takes on a concept of how the the natural materials used in the jewelry, thou rough and rudimentary, are centric to the formation of the planets in the solar system. The concept is told through a minimalistic visual interpretation of Echoes, to highlight the connection between the raw materials and its relationship with the universe.</br>Jewelry @the_echostudio</br>Stylist & Photo Divago</br>Assistant Michelle Gao",
-          }, 
-        },
-      ],
-      center: [
-        {
-          name: "S20192",
-          length: 4,
-          description: {
-            name: "宇宙霓虹系列 / Universal Neon Series",
-            value: "1. Vintage Green Apple Tie + Purple Velvet Shirt</br>2. Vintage Pink Chiffon Shirt+ Black Feather Fan + Salami</br>3. Green Plaid Jacket + IKEA Bag</br>4. Pattern Shirt + Dark Green Stripe Tie</br>Stylist Fiona Yin & DivaGo",
-          }, 
-        },
       ],
     },
   },
