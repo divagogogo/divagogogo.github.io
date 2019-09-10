@@ -43,7 +43,7 @@
 <template>
   <div class="album-wrap">
     <div class="album" v-show="!hide">
-      <h1 v-show="routenochange">DIVA.GO</h1>
+      <h1 v-show="routenochange">DivaGo.Kawing</h1>
       <div v-show="routenochange" class="menu-item" v-for="(m, i) in menu" v-bind:key="i">
         <h2>{{m.name}}</h2>
         <p v-for="l in m.list" v-bind:key="l.title" @click="to(l.to)" :class="{ grey: !l.to }">{{l.title}}</p>
