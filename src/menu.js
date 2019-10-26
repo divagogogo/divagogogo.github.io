@@ -54,7 +54,7 @@ export const menu = [
   name: 'BOOK',
   list: [
  {
-    title: '醫院終止計劃 Hospital Termination',
+    title: '醫院終止計劃 Doctor Stop',
     to: '/photoindex/normal/left/1'
   },
  {
@@ -98,6 +98,14 @@ export const list = {
         },
       ],
       center: [
+      {
+          name: "20197",
+          length: 13,
+          description: {
+            name: "Cosmical Wizard",
+            value: "The cosmic wizard from the Milky Way came to the new wild, wanting to start his new fete for the planets.</br>He dances, he sings, he runs, he cries, bring a new life to this dazzling planet.</br></br></br>Art Direction & Photo Me</br>Stylist & Make Up Artist Paw Paw</br>Model Yuan</br>Wardrobe & Accessory Mooly ",
+          }, 
+        },
         {
           name: "S20193",
           length: 11,
@@ -124,6 +132,14 @@ export const list = {
         },
       ],
       right: [
+      {
+          name: "20196",
+          length: 9,
+          description: {
+            name: "Amphibians",
+            value: "We are all amphibians. Theres a cenogenetic when we from loneliness to the crowd</br></br></br>Art Direction & Photo Me</br>Stylist & Make Up Artist Paw Paw</br>Model 57</br>Wardrobe & Accessory TRINITE/VagueUtters",
+          }, 
+        },
         {
           name: "20193",
           length: 13,
