@@ -54,7 +54,7 @@ export const menu = [
   name: 'BOOK',
   list: [
  {
-    title: '醫院終止計劃 Doctor Stop',
+    title: '醫院終止計劃',
     to: '/photoindex/normal/left/1'
   },
  {
@@ -516,10 +516,10 @@ export const list = {
       },
       {
         name: "BOOK2",
-        length: 1,
+        length: 5,
         description: {
-          name: "醫院終止計劃 Hospital Termination(TBC)",
-          value: "An interesting book about the treatment process of one of my illnesses and exhorts everyone to pay attention to the body.",
+          name: "醫院終止計劃 Stop Going to Hospital",
+          value: "An interesting book about the treatment process of one of my illnesses and exhorts everyone to pay attention to the body. <br/>Exhibition:<br/><br/>Sandwich, Yuyuan Road, Shanghai<br/><br/>AnfuDaTing, Anfu Road, Shanghai<br/>",
         }, 
       },
       ],
