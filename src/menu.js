@@ -442,6 +442,13 @@ export const list = {
       ],
       center: [
       {
+        name: "AMA-S",
+        length: 1,
+        description: {
+          name: "ZEN - 揀",
+        },
+      },
+      {
         name: "AMA-T",
         length: 1,
         description: {
@@ -473,10 +480,24 @@ export const list = {
       ],
       right: [
       {
+        name: "ARA-U",
+        length: 1,
+        description: {
+          name: "ZEN - 染",
+        },
+      },
+      {
         name: "ARA-T",
         length: 1,
         description: {
           name: "ZEN - 非",
+        },
+      },
+      {
+        name: "ARA-S",
+        length: 1,
+        description: {
+          name: "ZEN - 渡",
         },
       },
       {
@@ -529,7 +550,7 @@ export const list = {
         length: 4,
         description: {
           name: "Four Spirit 四灵兽",
-          value: "北方壬癸水玄武<br/>东方甲乙木青龙<br/>南方丙丁火朱雀<br/>西方庚辛金白虎",
+          value: "Four Spirit is the sub-series of Zen. It inspired by the four god beast in ancient time of China<br/><br/>北方壬癸水玄武<br/>东方甲乙木青龙<br/>南方丙丁火朱雀<br/>西方庚辛金白虎",
         }, 
       },
       ],
